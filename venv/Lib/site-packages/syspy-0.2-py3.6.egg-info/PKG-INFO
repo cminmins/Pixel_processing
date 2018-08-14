@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: syspy
+Version: 0.2
+Summary: Windows System Informations
+Home-page: https://github.com/aligoren/syspy
+Author: Ali GOREN <goren.ali@yandex.com>
+Author-email: goren.ali@yandex.com
+License: Apache v2.0 License
+Download-URL: https://github.com/aligoren/syspy/archive/master.zip
+Description: UNKNOWN
+Keywords: sys,util,system,info,information,windows,os
+Platform: UNKNOWN

@@ -1,0 +1,3 @@
+[console_scripts]
+mritopng = mritopng.__main__:main
+
