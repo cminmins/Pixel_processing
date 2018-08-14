@@ -54,7 +54,7 @@ tt = skimage.imread('test.tif', as_gray=True)
 # io.imshow(tt)
 # io.show()
 
-testtt = io.imread('test.tif', as_gray=True)
+testtt = io.imread('programori.tif')
 io.imshow(testtt)
 io.show()
 
