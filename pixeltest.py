@@ -28,7 +28,6 @@ testimg2 = plt.imread('programori.png')
 
 
 
-
 # t1 = testimg[500:700]
 # t2 = testimg2[500:700]
 # for i in range(len(t1)):
@@ -40,7 +39,7 @@ testimg2 = plt.imread('programori.png')
 # matlab.imsave('origin.png', org.pixel_array)
 
 
-skimage.imsave('test.tif', program.pixel_array, plugin="tifffile")
+skimage.imsave('test.tif', program.pixel_array, plugin="freeimage")
 tt = skimage.imread('test.tif', as_gray=True)
 
 # ## 원본데이터

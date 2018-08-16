@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="524e1823-d917-4012-a97a-919985dddcf6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pixeltest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pixeltest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.tif" beforeDir="false" afterPath="$PROJECT_DIR$/test.tif" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,21 +52,12 @@
       <file leaf-file-name="pixeltest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pixeltest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+            <state relative-caret-position="368">
+              <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
-                <marker date="1534228244737" expanded="true" signature="554:647" ph="..." />
+                <marker date="1534229147292" expanded="true" signature="554:647" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_io.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/io/_io.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3515">
-              <caret line="192" column="26" selection-start-line="192" selection-start-column="20" selection-end-line="192" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -104,8 +93,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="946" />
-    <option name="width" value="974" />
+    <option name="x" value="952" />
+    <option name="width" value="975" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -182,15 +171,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="946" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="952" y="0" width="975" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20563674" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20542231" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32968238" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32867885" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32867885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32968238" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -212,7 +201,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pixeltest.py</url>
-          <line>64</line>
+          <line>63</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -227,17 +216,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pixeltest.py</url>
-          <line>63</line>
+          <line>62</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pixeltest.py</url>
-          <line>60</line>
+          <line>59</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pixeltest.py</url>
-          <line>33</line>
+          <line>32</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -259,7 +248,7 @@
           <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <marker date="1534228244737" expanded="true" signature="554:647" ph="..." />
+            <marker date="1534229147292" expanded="true" signature="554:647" ph="..." />
           </folding>
         </state>
       </provider>
@@ -277,7 +266,7 @@
           <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <marker date="1534228244737" expanded="true" signature="554:647" ph="..." />
+            <marker date="1534229147292" expanded="true" signature="554:647" ph="..." />
           </folding>
         </state>
       </provider>
@@ -323,7 +312,7 @@
           <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <marker date="1534228244737" expanded="true" signature="554:647" ph="..." />
+            <marker date="1534229147292" expanded="true" signature="554:647" ph="..." />
           </folding>
         </state>
       </provider>
@@ -488,18 +477,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/io/_io.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3515">
-          <caret line="192" column="26" selection-start-line="192" selection-start-column="20" selection-end-line="192" selection-end-column="26" />
+        <state relative-caret-position="-380">
+          <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pixeltest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+        <state relative-caret-position="368">
+          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <marker date="1534228244737" expanded="true" signature="554:647" ph="..." />
+            <marker date="1534229147292" expanded="true" signature="554:647" ph="..." />
           </folding>
         </state>
       </provider>
