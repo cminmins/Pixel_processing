@@ -38,8 +38,9 @@ class ImageViewer:
         self.update()
 
     def loadImage(self, imagePath):
+# def loadImage(self, imagePath):
         ''' To load and display new image.'''
-        self.qimage = QImage(imagePath)
+        self.qimage = QImage('test.tif')
         self.qpixmap = QPixmap(self.qlabel_image.size())
         if not self.qimage.isNull():
             # reset Zoom factor and Pan position

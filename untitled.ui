@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1920</width>
-    <height>1080</height>
+    <width>2001</width>
+    <height>965</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -20,11 +20,11 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Button_open">
     <property name="geometry">
      <rect>
-      <x>1860</x>
-      <y>10</y>
+      <x>1870</x>
+      <y>20</y>
       <width>51</width>
       <height>23</height>
      </rect>
@@ -33,91 +33,21 @@
      <string>Open</string>
     </property>
    </widget>
-   <widget class="QListWidget" name="listWidget">
+   <widget class="QListWidget" name="List_directory">
     <property name="geometry">
      <rect>
-      <x>1860</x>
-      <y>40</y>
+      <x>1870</x>
+      <y>50</y>
       <width>51</width>
       <height>401</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="qlabel_image">
+   <widget class="QLabel" name="qlabel_CT">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>650</width>
-      <height>650</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:white
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>1</number>
-    </property>
-    <property name="midLineWidth">
-     <number>0</number>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="qlabel_image_2">
-    <property name="geometry">
-     <rect>
-      <x>1200</x>
-      <y>10</y>
-      <width>650</width>
-      <height>650</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:white
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>1</number>
-    </property>
-    <property name="midLineWidth">
-     <number>0</number>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="qlabel_image_3">
-    <property name="geometry">
-     <rect>
-      <x>680</x>
-      <y>10</y>
+      <x>20</x>
+      <y>30</y>
       <width>500</width>
       <height>500</height>
      </rect>
@@ -148,13 +78,277 @@
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="qlabel_CT_crop">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>40</y>
+      <width>200</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qlabel_MR">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>30</y>
+      <width>500</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qlabel_MR_crop">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>40</y>
+      <width>200</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qlabel_overay">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>370</y>
+      <width>200</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="List_CT">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>560</y>
+      <width>501</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="List_MR">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>560</y>
+      <width>501</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_save">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>700</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_CT1">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>750</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CT + 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_CTMR">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>750</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CT + MR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Button_MR1">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>750</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MR + 1</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>10</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="verticalSlider">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>80</y>
+      <width>22</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_2">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>10</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="verticalSlider_2">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>80</y>
+      <width>22</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1920</width>
+     <width>2001</width>
      <height>21</height>
     </rect>
    </property>

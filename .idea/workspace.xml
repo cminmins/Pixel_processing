@@ -16,46 +16,10 @@
       <change beforePath="$PROJECT_DIR$/tttt.tif" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/../PyQt-Image-Viewer/main.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="182">
-                    <caret line="29" column="39" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="39" />
-                    <folding>
-                      <element signature="e#112#159#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="actions.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/../PyQt-Image-Viewer/actions.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="171">
-                    <caret line="9" selection-start-line="9" selection-end-line="121" selection-end-column="28" />
-                    <folding>
-                      <element signature="e#1#25#0" expanded="true" />
-                      <element signature="e#237#5777#0" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-955859167">
@@ -92,47 +56,44 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="323980453">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Pixel_gui.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <element signature="e#488#1194#0" />
-                <element signature="e#1235#1449#0" />
-                <element signature="e#1483#1809#0" />
-                <element signature="e#2432#3765#0" />
-                <element signature="e#2734#3734#0" />
-                <element signature="e#3820#4068#0" />
-                <element signature="e#4122#4524#0" />
-                <element signature="e#4581#4686#0" />
-                <element signature="e#4720#5062#0" />
-                <element signature="e#5097#5494#0" />
-                <element signature="e#5529#5752#0" />
-                <element signature="e#188#569#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ElementTree.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/xml/etree/ElementTree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="585" selection-start-line="585" selection-end-line="585" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pixeltest.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pixeltest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            <state relative-caret-position="102">
+              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -180,8 +141,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="975" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -237,6 +198,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="QtImageViewer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Pixel_processing" />
@@ -255,6 +219,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="imageviewer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Pixel_processing" />
@@ -273,6 +240,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="pixeltest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Pixel_processing" />
@@ -291,6 +261,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.pixeltest" />
@@ -301,9 +274,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.pixeltest" />
+        <item itemvalue="Python.QtImageViewer" />
         <item itemvalue="Python.Pixel_gui" />
         <item itemvalue="Python.imageviewer" />
-        <item itemvalue="Python.QtImageViewer" />
       </list>
     </recent_temporary>
   </component>
@@ -321,26 +294,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="952" y="0" width="975" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20542231" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32867885" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32968238" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20512821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32968238" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39742213" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32785088" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39742213" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32968238" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32968238" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -372,7 +344,6 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -390,109 +361,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../pyqt-imageviewer/imageviewer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixeltest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixeltest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/io/_io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3648">
-          <caret line="192" column="26" selection-start-line="192" selection-start-column="20" selection-end-line="192" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixeltest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Elysium/C2Mpreprocessing/preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2071">
-          <caret line="109" column="47" lean-forward="true" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/io/_io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2508">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/io/_plugins/matplotlib_plugin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48412">
-          <caret line="2548" column="4" selection-start-line="2548" selection-start-column="4" selection-end-line="2548" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/pkgs/pillow-5.1.0-py36h0738816_0/Lib/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8037">
-          <caret line="423" column="17" selection-start-line="423" selection-start-column="17" selection-end-line="423" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixeltest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48412">
-          <caret line="2548" column="4" selection-start-line="2548" selection-start-column="4" selection-end-line="2548" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/pkgs/pillow-5.1.0-py36h0738816_0/Lib/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8037">
-          <caret line="423" column="17" lean-forward="true" selection-start-line="423" selection-start-column="17" selection-end-line="423" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda3/pkgs/spyder-3.2.8-py36_0/Lib/site-packages/spyder/widgets/variableexplorer/dataframeeditor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -595,20 +463,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1439081119/cv2/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="7205" column="98" selection-start-line="7205" selection-start-column="98" selection-end-line="7205" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Elysium/C2Mpreprocessing/preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="109" column="47" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1439081119/cv2/cv2/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/../Elysium/C2Mpreprocessing/preprocessing.py" />
     <entry file="file://$USER_HOME$/Anaconda3/pkgs/pillow-5.1.0-py36h0738816_0/Lib/site-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -633,13 +489,6 @@
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/io/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../PyQtImageViewer/QtImageViewer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/io/manage_plugins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -661,13 +510,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-386172602/cv2/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="7232" column="4" selection-start-line="7232" selection-start-column="4" selection-end-line="7232" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-386172602/cv2/cv2/__init__.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/tight_layout.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -675,13 +518,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pyqt-imageviewer/imageviewer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../pyqt-imageviewer/imageviewer.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -691,24 +528,23 @@
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/uic/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../PyQt-Image-Viewer/main.py">
+    <entry file="file://$PROJECT_DIR$/../PyQt-Image-Viewer/main.py" />
+    <entry file="file://$PROJECT_DIR$/../PyQt-Image-Viewer/actions.py" />
+    <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="39" />
+        <state relative-caret-position="741">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
           <folding>
-            <element signature="e#112#159#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1534493842207" expanded="true" signature="1860:1869" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../PyQt-Image-Viewer/actions.py">
+    <entry file="file://$PROJECT_DIR$/../PyQtImageViewer/QtImageViewer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="121" selection-end-column="28" />
-          <folding>
-            <element signature="e#1#25#0" expanded="true" />
-            <element signature="e#237#5777#0" />
-          </folding>
+        <state relative-caret-position="529">
+          <caret line="123" column="40" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -721,32 +557,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pixeltest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="29" column="35" lean-forward="true" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        <state relative-caret-position="102">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#488#1194#0" />
-            <element signature="e#1235#1449#0" />
-            <element signature="e#1483#1809#0" />
-            <element signature="e#2432#3765#0" />
-            <element signature="e#2734#3734#0" />
-            <element signature="e#3820#4068#0" />
-            <element signature="e#4122#4524#0" />
-            <element signature="e#4581#4686#0" />
-            <element signature="e#4720#5062#0" />
-            <element signature="e#5097#5494#0" />
-            <element signature="e#5529#5752#0" />
-            <element signature="e#188#569#0" />
           </folding>
         </state>
       </provider>
