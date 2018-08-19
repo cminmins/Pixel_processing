@@ -1,20 +1,14 @@
-import sys, os
-import pydicom
-import skimage.io as skimage
-from skimage import data, io, filters, color
+# -*- coding: utf-8 -*-
 
-from PyQt5 import QtCore, uic, QtWidgets
-# gui = uic.loadUiType("untitled.ui")[0]
+# Form implementation generated from reading ui file 'untitled.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
 
-class Pixel_gui(QtWidgets.QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.setupUi(self)
+from PyQt5 import QtCore, QtGui, QtWidgets
 
-        self.Button_open.clicked.connect(self.opendirectory)
-        self.label = QtWidgets.QLabel("qlabel_MR")
-
-
+class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(2001, 965)
@@ -39,7 +33,7 @@ class Pixel_gui(QtWidgets.QMainWindow):
         sizePolicy.setHeightForWidth(self.qlabel_CT.sizePolicy().hasHeightForWidth())
         self.qlabel_CT.setSizePolicy(sizePolicy)
         self.qlabel_CT.setStyleSheet("background-color:white\n"
-                                     "")
+"")
         self.qlabel_CT.setFrameShape(QtWidgets.QFrame.Box)
         self.qlabel_CT.setFrameShadow(QtWidgets.QFrame.Plain)
         self.qlabel_CT.setLineWidth(1)
@@ -54,7 +48,7 @@ class Pixel_gui(QtWidgets.QMainWindow):
         sizePolicy.setHeightForWidth(self.qlabel_CT_crop.sizePolicy().hasHeightForWidth())
         self.qlabel_CT_crop.setSizePolicy(sizePolicy)
         self.qlabel_CT_crop.setStyleSheet("background-color:white\n"
-                                          "")
+"")
         self.qlabel_CT_crop.setFrameShape(QtWidgets.QFrame.Box)
         self.qlabel_CT_crop.setFrameShadow(QtWidgets.QFrame.Plain)
         self.qlabel_CT_crop.setLineWidth(1)
@@ -69,7 +63,7 @@ class Pixel_gui(QtWidgets.QMainWindow):
         sizePolicy.setHeightForWidth(self.qlabel_MR.sizePolicy().hasHeightForWidth())
         self.qlabel_MR.setSizePolicy(sizePolicy)
         self.qlabel_MR.setStyleSheet("background-color:white\n"
-                                     "")
+"")
         self.qlabel_MR.setFrameShape(QtWidgets.QFrame.Box)
         self.qlabel_MR.setFrameShadow(QtWidgets.QFrame.Plain)
         self.qlabel_MR.setLineWidth(1)
@@ -84,7 +78,7 @@ class Pixel_gui(QtWidgets.QMainWindow):
         sizePolicy.setHeightForWidth(self.qlabel_MR_crop.sizePolicy().hasHeightForWidth())
         self.qlabel_MR_crop.setSizePolicy(sizePolicy)
         self.qlabel_MR_crop.setStyleSheet("background-color:white\n"
-                                          "")
+"")
         self.qlabel_MR_crop.setFrameShape(QtWidgets.QFrame.Box)
         self.qlabel_MR_crop.setFrameShadow(QtWidgets.QFrame.Plain)
         self.qlabel_MR_crop.setLineWidth(1)
@@ -99,7 +93,7 @@ class Pixel_gui(QtWidgets.QMainWindow):
         sizePolicy.setHeightForWidth(self.qlabel_overay.sizePolicy().hasHeightForWidth())
         self.qlabel_overay.setSizePolicy(sizePolicy)
         self.qlabel_overay.setStyleSheet("background-color:white\n"
-                                         "")
+"")
         self.qlabel_overay.setFrameShape(QtWidgets.QFrame.Box)
         self.qlabel_overay.setFrameShadow(QtWidgets.QFrame.Plain)
         self.qlabel_overay.setLineWidth(1)
@@ -160,15 +154,4 @@ class Pixel_gui(QtWidgets.QMainWindow):
         self.Button_CT1.setText(_translate("MainWindow", "CT + 1"))
         self.Button_CTMR.setText(_translate("MainWindow", "CT + MR"))
         self.Button_MR1.setText(_translate("MainWindow", "MR + 1"))
-
-    def opendirectory(self):
-        dir_name = QtWidgets.QFileDialog.getExistingDirectory(self, 'Open Folder', 'C:\\')
-        self.qlabel_CT.setText(dir_name)
-
-
-if __name__ == '__main__':
-    app = QtWidgets.QApplication(sys.argv)
-    ex = Pixel_gui()
-    ex.show()
-    sys.exit(app.exec_())
 
