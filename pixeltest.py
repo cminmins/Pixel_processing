@@ -5,14 +5,26 @@ import skimage.io as skimage
 from skimage import data, io, filters, color
 import numpy as np
 
-org = pydicom.dcmread('origin.dcm')
-# niidcm = pydicom.dcmread('res.dcm')
-# cmd = pydicom.dcmread('m000-ori.dcm')
-# program = pydicom.dcmread('program.dcm')
-# nii = nib.load('ori.nii')
-# nii_data= nii.get_data()
-# nii2 = nib.load('ori2.nii')
-# nii2_data= nii.get_data()
+org = pydicom.dcmread('30005.dcm')
+org_pix = org.pixel_array
+after_org = pydicom.dcmread('m001-s0001-s000a001.dcm')
+after_org_pix = after_org.pixel_array
+res_dcm = pydicom.dcmread('m000-s0001-Reslice_ct_1.dcm')
+res_dcm_pix = res_dcm.pixel_array
+
+# org = pydicom.dcmread('60002.dcm')
+# org_pix = org.pixel_array
+# after_org = pydicom.dcmread('m001-s0001-s000a1001.dcm')
+# after_org_pix = after_org.pixel_array
+# res_dcm = pydicom.dcmread('m000-s0001-Reslice_mri_1.dcm')
+# res_dcm_pix = res_dcm.pixel_array
+
+
+nii = nib.load('30005.nii')
+nii_data = nii.get_data()
+res_nii = nib.load('Reslice_ct_1.nii')
+res_nii_data = res_nii.get_data()
+
 
 # skimage.imsave('test.tif', program.pixel_array, plugin="tifffile")
 ski_prog = skimage.imread('test.tif')

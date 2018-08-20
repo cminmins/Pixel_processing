@@ -1,19 +1,27 @@
-import sys, os
+import sys, os, glob
 import pydicom
-import skimage.io as skimage
+import numpy as np
+import skimage.io as sk
 from skimage import data, io, filters, color
 
-from PyQt5 import QtCore, uic, QtWidgets
+from PyQt5 import QtCore, uic, QtWidgets, QtGui
 # gui = uic.loadUiType("untitled.ui")[0]
 
 class Pixel_gui(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-
+    
+        ## 디렉토리 열고 dcm 리스트까지 추가    
+        dir_name = ''
         self.Button_open.clicked.connect(self.opendirectory)
-        self.label = QtWidgets.QLabel("qlabel_MR")
+        self.List_directory.itemClicked.connect(self.choosedirectory)
 
+        ## dcm 파일 클릭하면 View에 이미지 띄우기
+        self.List_CT.itemClicked.connect(self.selectimageCT)
+        self.List_MR.itemClicked.connect(self.selectimageMR)
+
+        
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -25,12 +33,15 @@ class Pixel_gui(QtWidgets.QMainWindow):
         MainWindow.setSizePolicy(sizePolicy)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+        ## 디렉토리 오픈 버튼
         self.Button_open = QtWidgets.QPushButton(self.centralwidget)
         self.Button_open.setGeometry(QtCore.QRect(1870, 20, 51, 23))
         self.Button_open.setObjectName("Button_open")
+        ## 디렉토리 리스트
         self.List_directory = QtWidgets.QListWidget(self.centralwidget)
         self.List_directory.setGeometry(QtCore.QRect(1870, 50, 51, 401))
         self.List_directory.setObjectName("List_directory")
+
         self.qlabel_CT = QtWidgets.QLabel(self.centralwidget)
         self.qlabel_CT.setGeometry(QtCore.QRect(20, 30, 500, 500))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
@@ -161,9 +172,57 @@ class Pixel_gui(QtWidgets.QMainWindow):
         self.Button_CTMR.setText(_translate("MainWindow", "CT + MR"))
         self.Button_MR1.setText(_translate("MainWindow", "MR + 1"))
 
+    def selectimageCT(self):
+        dcmitem = self.List_CT.selectedItems()[0].text()
+        dcmimage = pydicom.dcmread(dcmitem).pixel_array
+
+        # dcmimage_tif = sk.imsave('test.tif', dcmimage)
+        # dcmimage_tif = sk.imread('test.tif')
+        # self.qlabel_CT.setPixmap(dcmimage_tif)
+
+        dcmimage = (dcmimage / 16).astype(np.uint8)
+        dcmimage = np.require(dcmimage, np.uint8, 'C')
+        h, w = dcmimage.shape
+        result = QtGui.QImage(dcmimage.data, w, h, QtGui.QImage.Format_Grayscale8)
+        self.qlabel_CT.setPixmap(QtGui.QPixmap.fromImage(result))
+
+    def selectimageMR(self):
+        dcmitem = ''
+
     def opendirectory(self):
-        dir_name = QtWidgets.QFileDialog.getExistingDirectory(self, 'Open Folder', 'C:\\')
-        self.qlabel_CT.setText(dir_name)
+        self.List_directory.clear()
+        ## C:\\를 베이스로 디렉토리 열기 실행
+        # self.dir_name = QtWidgets.QFileDialog.getExistingDirectory(self, 'Open Folder', 'C:\\')
+        self.dir_name = "C:\\demo_after"
+
+        ## 해당 경로에 있는 num 폴더들 List_directory에 추가
+        dir_list = os.listdir(self.dir_name)
+        for i in dir_list:
+            dir_i = QtWidgets.QListWidgetItem(i)
+            self.List_directory.addItem(dir_i)
+
+    def choosedirectory(self):
+        ## 아이템 선택 할때 먼저 초기화
+        self.List_CT.clear()
+        self.List_MR.clear()
+
+        ## 선택한 아이템 텍스트 저장
+        selecteditem = self.List_directory.selectedItems()[0].text()
+        current_dir = self.dir_name + '\\' + selecteditem
+        path_ct = current_dir + "\\CT"
+        path_t2 = current_dir + "\\MRI"
+
+        ## 각각 폴더안에서 dcm 파일 찾기
+        ct_default = glob.glob(os.path.join(path_ct, "*.dcm"))
+        mr_default = glob.glob(os.path.join(path_t2, "*.dcm"))
+
+        ## List CT/MRI에 dcm 아이템 추가
+        for item in ct_default:
+            dcmitem = QtWidgets.QListWidgetItem(item)
+            self.List_CT.addItem(dcmitem)
+        for item in mr_default:
+            dcmitem = QtWidgets.QListWidgetItem(item)
+            self.List_MR.addItem(dcmitem)
 
 
 if __name__ == '__main__':
