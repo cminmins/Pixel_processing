@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>2001</width>
-    <height>965</height>
+    <width>1920</width>
+    <height>1080</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -23,7 +23,7 @@
    <widget class="QPushButton" name="Button_open">
     <property name="geometry">
      <rect>
-      <x>1870</x>
+      <x>1860</x>
       <y>20</y>
       <width>51</width>
       <height>23</height>
@@ -36,55 +36,20 @@
    <widget class="QListWidget" name="List_directory">
     <property name="geometry">
      <rect>
-      <x>1870</x>
+      <x>1860</x>
       <y>50</y>
       <width>51</width>
       <height>401</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="qlabel_CT">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>500</width>
-      <height>500</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:white
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>1</number>
-    </property>
-    <property name="midLineWidth">
-     <number>0</number>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLabel" name="qlabel_CT_crop">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>40</y>
-      <width>200</width>
-      <height>300</height>
+      <x>520</x>
+      <y>20</y>
+      <width>400</width>
+      <height>500</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -116,8 +81,8 @@
    <widget class="QLabel" name="qlabel_MR">
     <property name="geometry">
      <rect>
-      <x>1230</x>
-      <y>30</y>
+      <x>1340</x>
+      <y>20</y>
       <width>500</width>
       <height>500</height>
      </rect>
@@ -151,10 +116,10 @@
    <widget class="QLabel" name="qlabel_MR_crop">
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>40</y>
-      <width>200</width>
-      <height>300</height>
+      <x>930</x>
+      <y>20</y>
+      <width>400</width>
+      <height>500</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -186,10 +151,10 @@
    <widget class="QLabel" name="qlabel_overay">
     <property name="geometry">
      <rect>
-      <x>770</x>
-      <y>370</y>
-      <width>200</width>
-      <height>300</height>
+      <x>560</x>
+      <y>530</y>
+      <width>400</width>
+      <height>500</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -221,8 +186,8 @@
    <widget class="QListWidget" name="List_CT">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>560</y>
+      <x>10</x>
+      <y>550</y>
       <width>501</width>
       <height>191</height>
      </rect>
@@ -231,8 +196,8 @@
    <widget class="QListWidget" name="List_MR">
     <property name="geometry">
      <rect>
-      <x>1230</x>
-      <y>560</y>
+      <x>1340</x>
+      <y>550</y>
       <width>501</width>
       <height>191</height>
      </rect>
@@ -241,8 +206,8 @@
    <widget class="QPushButton" name="Button_save">
     <property name="geometry">
      <rect>
-      <x>830</x>
-      <y>700</y>
+      <x>1100</x>
+      <y>650</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -254,8 +219,8 @@
    <widget class="QPushButton" name="Button_CT1">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>750</y>
+      <x>990</x>
+      <y>710</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -267,7 +232,7 @@
    <widget class="QPushButton" name="Button_CTMR">
     <property name="geometry">
      <rect>
-      <x>830</x>
+      <x>1050</x>
       <y>750</y>
       <width>101</width>
       <height>31</height>
@@ -280,8 +245,8 @@
    <widget class="QPushButton" name="Button_MR1">
     <property name="geometry">
      <rect>
-      <x>970</x>
-      <y>750</y>
+      <x>1100</x>
+      <y>710</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -290,37 +255,11 @@
      <string>MR + 1</string>
     </property>
    </widget>
-   <widget class="QSlider" name="horizontalSlider">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>10</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QSlider" name="verticalSlider">
-    <property name="geometry">
-     <rect>
-      <x>570</x>
-      <y>80</y>
-      <width>22</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
    <widget class="QSlider" name="horizontalSlider_2">
     <property name="geometry">
      <rect>
-      <x>920</x>
-      <y>10</y>
+      <x>1080</x>
+      <y>550</y>
       <width>160</width>
       <height>22</height>
      </rect>
@@ -332,8 +271,8 @@
    <widget class="QSlider" name="verticalSlider_2">
     <property name="geometry">
      <rect>
-      <x>1150</x>
-      <y>80</y>
+      <x>1270</x>
+      <y>570</y>
       <width>22</width>
       <height>160</height>
      </rect>
@@ -342,13 +281,23 @@
      <enum>Qt::Vertical</enum>
     </property>
    </widget>
+   <widget class="QGraphicsView" name="graphics_CT">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>500</width>
+      <height>500</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>2001</width>
+     <width>1920</width>
      <height>21</height>
     </rect>
    </property>

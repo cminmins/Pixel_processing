@@ -6,42 +6,53 @@ import skimage.io as skimage
 from skimage import data, io, filters, color
 import numpy as np
 
-org = pydicom.dcmread('origin.dcm')
-org_pix = org.pixel_array
-after_org = pydicom.dcmread('m000-s0001-s000a001.dcm')
-after_org_pix = after_org.pixel_array
-res_dcm = pydicom.dcmread('m000-after.dcm')
-res_dcm_pix = res_dcm.pixel_array
+org_ct = pydicom.dcmread('30005.dcm')
+a1 = org_ct.pixel_array
+after_org = pydicom.dcmread('m000-s0001-Reslice_ct.dcm')
+a2 = after_org.pixel_array
 
-nii_file = nib.load('s000a001.nii')
-nii_array = nii_file.get_data()
-nii_affine = nii_file.affine
-nii_zooms = nii_file.header.get_zooms()
+org_mr = pydicom.dcmread('60002.dcm')
+b1 = org_mr.pixel_array
+res_dcm = pydicom.dcmread('m001-s0001-Reslice_mri.dcm')
+b2 = res_dcm.pixel_array
 
-new_nii, new_affine = reslice(nii_array, nii_affine, nii_zooms, nii_zooms)
-print(new_nii.dtype)
+print((a1==a2).all())
+print((b1==b2).all())
 
-# new_nii = np.array(new_nii, dtype='int16')
-# new_nii.astype('uint16')
-print(new_nii.dtype)
+CT_image = nib.load('m000-stacks-30005.nii')
+CT_array = np.copy(CT_image.get_data())
+CT_array = CT_array.astype(np.int16)
+CT_affine = CT_image.affine
+CT_zooms = CT_image.header.get_zooms()
 
-new_nii_image = nib.Nifti1Image(new_nii, new_affine)
-nib.save(new_nii_image,'after.nii')
+### MRI read
+MRT2_image = nib.load('m000-stacks-60002.nii')
+MRT2_array = np.copy(MRT2_image.get_data())
+MRT2_array = MRT2_array.astype(np.int16)
+MRT2_affine = MRT2_image.affine
+MRT2_zooms = MRT2_image.header.get_zooms()
 
-# org = pydicom.dcmread('60002.dcm')
-# org_pix = org.pixel_array
-# after_org = pydicom.dcmread('m001-s0001-s000a1001.dcm')
-# after_org_pix = after_org.pixel_array
-# res_dcm = pydicom.dcmread('m000-s0001-Reslice_mri_1.dcm')
-# res_dcm_pix = res_dcm.pixel_array
+### CT의 zoom 수정
+# CT_zooma = CT_image.header['dim'][1] / MRT2_image.header['dim'][1] * CT_zooms[0]
+# CT_zoomb = CT_image.header['dim'][2] / MRT2_image.header['dim'][2] * CT_zooms[1]
+CT_zoomc = CT_image.header['dim'][3] / MRT2_image.header['dim'][3] * CT_zooms[2]
 
-#
-# nii = nib.load('30005.nii')
-# nii_data = nii.get_data()
-# res_nii = nib.load('Reslice_ct_1.nii')
-# res_nii_data = res_nii.get_data()
-#
-#
+### CT의 바뀐 zoom 적용
+# change_zoomCT_L = [CT_zooma, CT_zoomb, CT_zoomc]
+change_zoomCT_L = [CT_zooms[0], CT_zooms[1], CT_zoomc]
+change_zoomCT = tuple(change_zoomCT_L)
+
+### 수정된 zoom으로 Reslice
+newCT_brain, newCT_affine = reslice(CT_array, CT_affine, CT_zooms, CT_zooms)
+newT2_brain, newT2_affine = reslice(MRT2_array, MRT2_affine, MRT2_zooms, MRT2_zooms)
+
+### Reslice한 파일 저장
+newCT_image = nib.Nifti1Image(newCT_brain, newCT_affine)
+newT2_image = nib.Nifti1Image(newT2_brain, newT2_affine)
+nib.save(newCT_image, "Reslice_ct.nii")
+nib.save(newT2_image, "Reslice_mri.nii")
+
+
 # # skimage.imsave('test.tif', program.pixel_array, plugin="tifffile")
 # ski_prog = skimage.imread('test.tif')
 # ski_prog_gray = skimage.imread('test.tif', as_gray=True)

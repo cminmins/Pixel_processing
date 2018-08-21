@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="524e1823-d917-4012-a97a-919985dddcf6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pixel_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pixel_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/origin.dcm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pixeltest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pixeltest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.ui" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -10,25 +15,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="mainui.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/mainui.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="266">
-                    <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-955859167">
@@ -99,28 +85,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Pixel_gui.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Pixel_gui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-248">
-              <caret line="172" column="67" selection-start-line="172" selection-start-column="67" selection-end-line="172" selection-end-column="67" />
+            <state relative-caret-position="297">
+              <caret line="165" column="25" lean-forward="true" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
-                <element signature="e#741#8860#0" />
-                <element signature="e#8911#9371#0" />
+                <element signature="e#810#8656#0" />
+                <element signature="e#8715#9199#0" />
+                <element signature="e#8236#9248#0" />
+                <element signature="e#10170#10875#0" />
+                <element signature="e#10045#10461#0" />
+                <element signature="e#10502#11261#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pixeltest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="th.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/th.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="135" column="67" selection-start-line="11" selection-start-column="3" selection-end-line="135" selection-end-column="67" />
+              <folding>
+                <element signature="e#313#7041#0" />
+                <element signature="e#7092#7552#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="second.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/second.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="148" selection-start-line="11" selection-end-line="148" />
+              <folding>
+                <element signature="e#313#7659#0" />
+                <element signature="e#7710#8170#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pixeltest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pixeltest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -152,6 +165,8 @@
       <find>centralwidget</find>
       <find>qlistitem</find>
       <find>opendir</find>
+      <find>leftMouseButtonPressed</find>
+      <find>mousePressEvent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,21 +176,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/venv/Lib/site-packages/mritopng/__init__.py" />
-        <option value="$PROJECT_DIR$/../pyqt-imageviewer/imageviewer.py" />
         <option value="$PROJECT_DIR$/../PyQt-Image-Viewer/actions.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/min.py" />
         <option value="$PROJECT_DIR$/mainui.py" />
-        <option value="$PROJECT_DIR$/Pixel_gui.py" />
         <option value="$PROJECT_DIR$/../Elysium/C2Mpreprocessing/preprocessing.py" />
         <option value="$PROJECT_DIR$/pixeltest.py" />
+        <option value="$PROJECT_DIR$/../PyQtImageViewer/QtImageViewer.py" />
+        <option value="$PROJECT_DIR$/Pixel_gui.py" />
+        <option value="$PROJECT_DIR$/../pyqt-imageviewer/imageviewer.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -198,7 +214,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Elysium/C2Mpreprocessing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PyQt-Image-Viewer" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -213,7 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pixeltest">
+  <component name="RunManager" selected="Python.imageviewer">
     <configuration name="Pixel_gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Pixel_processing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -250,7 +266,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="imageviewer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Pixel_processing" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -258,11 +274,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../pyqt-imageviewer" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pyqt-imageviewer/imageviewer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -308,16 +324,16 @@
       <item itemvalue="Python.pixeltest" />
       <item itemvalue="Python.QtImageViewer" />
       <item itemvalue="Python.Pixel_gui" />
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.preprocessing" />
+      <item itemvalue="Python.imageviewer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.pixeltest" />
+        <item itemvalue="Python.imageviewer" />
         <item itemvalue="Python.Pixel_gui" />
-        <item itemvalue="Python.preprocessing" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.QtImageViewer" />
+        <item itemvalue="Python.pixeltest" />
+        <item itemvalue="Python.preprocessing" />
       </list>
     </recent_temporary>
   </component>
@@ -335,17 +351,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="1" />
+    <frame x="-7" y="0" width="974" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2045929" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32760474" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32711306" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32968238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32968238" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.396348" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40504938" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -374,28 +391,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pixeltest.py</url>
-          <line>46</line>
+          <line>73</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Pixel_gui.py</url>
-          <line>186</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Pixel_gui.py</url>
-          <line>182</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pixeltest.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="22" />
+          <line>21</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pixeltest.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="24" />
+          <url>file://$PROJECT_DIR$/Pixel_gui.py</url>
+          <line>166</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -405,7 +412,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -423,69 +430,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3344">
-          <caret line="176" column="55" lean-forward="true" selection-start-line="176" selection-start-column="55" selection-end-line="176" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#741#8860#0" />
-            <element signature="e#8911#9371#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pixeltest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3325">
-          <caret line="175" column="19" lean-forward="true" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#741#8860#0" />
-            <element signature="e#8911#9371#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Elysium/C2Mpreprocessing/preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3135">
-          <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#741#8860#0" />
-            <element signature="e#8911#9371#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2812">
@@ -649,7 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pyqt-imageviewer/imageviewer.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -659,15 +602,7 @@
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/uic/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../PyQt-Image-Viewer/main.py" />
     <entry file="file://$PROJECT_DIR$/../PyQt-Image-Viewer/actions.py" />
-    <entry file="file://$PROJECT_DIR$/../PyQtImageViewer/QtImageViewer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="123" column="40" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Lib/xml/etree/ElementTree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -677,16 +612,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py" />
     <entry file="file://$PROJECT_DIR$/min.py" />
-    <entry file="file://$PROJECT_DIR$/../Elysium/C2Mpreprocessing/preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="94" column="84" lean-forward="true" selection-start-line="94" selection-start-column="84" selection-end-line="94" selection-end-column="84" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/nibabel/loadsave.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -701,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pydicom/filereader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="861" selection-start-line="861" selection-end-line="861" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mainui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -715,24 +633,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pydicom/filereader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
-          <caret line="172" column="67" selection-start-line="172" selection-start-column="67" selection-end-line="172" selection-end-column="67" />
+        <state relative-caret-position="178">
+          <caret line="861" selection-start-line="861" selection-end-line="861" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-386172602/PyQt5/QtGui/QImage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="305" column="12" lean-forward="true" selection-start-line="305" selection-start-column="12" selection-end-line="305" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-386172602/PyQt5/QtWidgets/QWidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="954" column="8" selection-start-line="954" selection-start-column="8" selection-end-line="954" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Elysium/C2Mpreprocessing/preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="116" column="65" lean-forward="true" selection-start-line="82" selection-start-column="3" selection-end-line="116" selection-end-column="65" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#741#8860#0" />
-            <element signature="e#8911#9371#0" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pixeltest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="285">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/th.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="135" column="67" selection-start-line="11" selection-start-column="3" selection-end-line="135" selection-end-column="67" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#313#7041#0" />
+            <element signature="e#7092#7552#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-386172602/PyQt5/QtCore/pyqtSignal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-386172602/PyQt5/QtWidgets/QGraphicsView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="244" column="8" selection-start-line="244" selection-start-column="8" selection-end-line="244" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/second.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="148" selection-start-line="11" selection-end-line="148" />
+          <folding>
+            <element signature="e#313#7659#0" />
+            <element signature="e#7710#8170#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pyqt-imageviewer/imageviewer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="38" column="50" lean-forward="true" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+          <folding>
+            <element signature="e#25#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PyQtImageViewer/QtImageViewer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <caret line="153" column="37" lean-forward="true" selection-start-line="153" selection-start-column="37" selection-end-line="153" selection-end-column="37" />
+          <folding>
+            <element signature="e#3319#3439#0" />
+            <element signature="e#3475#3672#0" />
+            <element signature="e#3704#3933#0" />
+            <element signature="e#3964#4201#0" />
+            <element signature="e#4242#4967#0" />
+            <element signature="e#5023#5692#0" />
+            <element signature="e#5730#6309#0" />
+            <element signature="e#6095#6309#0" />
+            <element signature="e#6353#6429#0" />
+            <element signature="e#7092#8083#0" />
+            <element signature="e#8137#8648#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PyQt-Image-Viewer/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="165" column="25" lean-forward="true" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#810#8656#0" />
+            <element signature="e#8715#9199#0" />
+            <element signature="e#8236#9248#0" />
+            <element signature="e#10170#10875#0" />
+            <element signature="e#10045#10461#0" />
+            <element signature="e#10502#11261#0" />
           </folding>
         </state>
       </provider>

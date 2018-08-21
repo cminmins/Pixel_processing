@@ -8,6 +8,7 @@ from PyQt5 import QtCore, uic, QtWidgets, QtGui
 # gui = uic.loadUiType("untitled.ui")[0]
 
 class Pixel_gui(QtWidgets.QMainWindow):
+    leftMouseButtonPressed = QtCore.pyqtSignal(float, float)
     def __init__(self):
         super().__init__()
         self.setupUi(self)
@@ -21,11 +22,11 @@ class Pixel_gui(QtWidgets.QMainWindow):
         self.List_CT.itemClicked.connect(self.selectimageCT)
         self.List_MR.itemClicked.connect(self.selectimageMR)
 
-        
+        self.qlabel_CT.mousePressEvent(self.cropimageCT, self.event)
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(2001, 965)
+        MainWindow.resize(1920, 1080)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -33,17 +34,14 @@ class Pixel_gui(QtWidgets.QMainWindow):
         MainWindow.setSizePolicy(sizePolicy)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        ## 디렉토리 오픈 버튼
         self.Button_open = QtWidgets.QPushButton(self.centralwidget)
-        self.Button_open.setGeometry(QtCore.QRect(1870, 20, 51, 23))
+        self.Button_open.setGeometry(QtCore.QRect(1860, 20, 51, 23))
         self.Button_open.setObjectName("Button_open")
-        ## 디렉토리 리스트
         self.List_directory = QtWidgets.QListWidget(self.centralwidget)
-        self.List_directory.setGeometry(QtCore.QRect(1870, 50, 51, 401))
+        self.List_directory.setGeometry(QtCore.QRect(1860, 50, 51, 401))
         self.List_directory.setObjectName("List_directory")
-
         self.qlabel_CT = QtWidgets.QLabel(self.centralwidget)
-        self.qlabel_CT.setGeometry(QtCore.QRect(20, 30, 500, 500))
+        self.qlabel_CT.setGeometry(QtCore.QRect(10, 20, 500, 500))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -58,7 +56,7 @@ class Pixel_gui(QtWidgets.QMainWindow):
         self.qlabel_CT.setText("")
         self.qlabel_CT.setObjectName("qlabel_CT")
         self.qlabel_CT_crop = QtWidgets.QLabel(self.centralwidget)
-        self.qlabel_CT_crop.setGeometry(QtCore.QRect(630, 40, 200, 300))
+        self.qlabel_CT_crop.setGeometry(QtCore.QRect(520, 20, 400, 500))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -73,7 +71,7 @@ class Pixel_gui(QtWidgets.QMainWindow):
         self.qlabel_CT_crop.setText("")
         self.qlabel_CT_crop.setObjectName("qlabel_CT_crop")
         self.qlabel_MR = QtWidgets.QLabel(self.centralwidget)
-        self.qlabel_MR.setGeometry(QtCore.QRect(1230, 30, 500, 500))
+        self.qlabel_MR.setGeometry(QtCore.QRect(1340, 20, 500, 500))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -88,7 +86,7 @@ class Pixel_gui(QtWidgets.QMainWindow):
         self.qlabel_MR.setText("")
         self.qlabel_MR.setObjectName("qlabel_MR")
         self.qlabel_MR_crop = QtWidgets.QLabel(self.centralwidget)
-        self.qlabel_MR_crop.setGeometry(QtCore.QRect(900, 40, 200, 300))
+        self.qlabel_MR_crop.setGeometry(QtCore.QRect(930, 20, 400, 500))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -103,7 +101,7 @@ class Pixel_gui(QtWidgets.QMainWindow):
         self.qlabel_MR_crop.setText("")
         self.qlabel_MR_crop.setObjectName("qlabel_MR_crop")
         self.qlabel_overay = QtWidgets.QLabel(self.centralwidget)
-        self.qlabel_overay.setGeometry(QtCore.QRect(770, 370, 200, 300))
+        self.qlabel_overay.setGeometry(QtCore.QRect(560, 530, 400, 500))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -118,42 +116,34 @@ class Pixel_gui(QtWidgets.QMainWindow):
         self.qlabel_overay.setText("")
         self.qlabel_overay.setObjectName("qlabel_overay")
         self.List_CT = QtWidgets.QListWidget(self.centralwidget)
-        self.List_CT.setGeometry(QtCore.QRect(20, 560, 501, 191))
+        self.List_CT.setGeometry(QtCore.QRect(10, 550, 501, 191))
         self.List_CT.setObjectName("List_CT")
         self.List_MR = QtWidgets.QListWidget(self.centralwidget)
-        self.List_MR.setGeometry(QtCore.QRect(1230, 560, 501, 191))
+        self.List_MR.setGeometry(QtCore.QRect(1340, 550, 501, 191))
         self.List_MR.setObjectName("List_MR")
         self.Button_save = QtWidgets.QPushButton(self.centralwidget)
-        self.Button_save.setGeometry(QtCore.QRect(830, 700, 101, 31))
+        self.Button_save.setGeometry(QtCore.QRect(1100, 650, 101, 31))
         self.Button_save.setObjectName("Button_save")
         self.Button_CT1 = QtWidgets.QPushButton(self.centralwidget)
-        self.Button_CT1.setGeometry(QtCore.QRect(690, 750, 101, 31))
+        self.Button_CT1.setGeometry(QtCore.QRect(990, 710, 101, 31))
         self.Button_CT1.setObjectName("Button_CT1")
         self.Button_CTMR = QtWidgets.QPushButton(self.centralwidget)
-        self.Button_CTMR.setGeometry(QtCore.QRect(830, 750, 101, 31))
+        self.Button_CTMR.setGeometry(QtCore.QRect(1050, 750, 101, 31))
         self.Button_CTMR.setObjectName("Button_CTMR")
         self.Button_MR1 = QtWidgets.QPushButton(self.centralwidget)
-        self.Button_MR1.setGeometry(QtCore.QRect(970, 750, 101, 31))
+        self.Button_MR1.setGeometry(QtCore.QRect(1100, 710, 101, 31))
         self.Button_MR1.setObjectName("Button_MR1")
-        self.horizontalSlider = QtWidgets.QSlider(self.centralwidget)
-        self.horizontalSlider.setGeometry(QtCore.QRect(650, 10, 160, 22))
-        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider.setObjectName("horizontalSlider")
-        self.verticalSlider = QtWidgets.QSlider(self.centralwidget)
-        self.verticalSlider.setGeometry(QtCore.QRect(570, 80, 22, 160))
-        self.verticalSlider.setOrientation(QtCore.Qt.Vertical)
-        self.verticalSlider.setObjectName("verticalSlider")
         self.horizontalSlider_2 = QtWidgets.QSlider(self.centralwidget)
-        self.horizontalSlider_2.setGeometry(QtCore.QRect(920, 10, 160, 22))
+        self.horizontalSlider_2.setGeometry(QtCore.QRect(1080, 550, 160, 22))
         self.horizontalSlider_2.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider_2.setObjectName("horizontalSlider_2")
         self.verticalSlider_2 = QtWidgets.QSlider(self.centralwidget)
-        self.verticalSlider_2.setGeometry(QtCore.QRect(1150, 80, 22, 160))
+        self.verticalSlider_2.setGeometry(QtCore.QRect(1270, 570, 22, 160))
         self.verticalSlider_2.setOrientation(QtCore.Qt.Vertical)
         self.verticalSlider_2.setObjectName("verticalSlider_2")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 2001, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1920, 21))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -164,30 +154,56 @@ class Pixel_gui(QtWidgets.QMainWindow):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
-        _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.Button_open.setText(_translate("MainWindow", "Open"))
-        self.Button_save.setText(_translate("MainWindow", "Save"))
-        self.Button_CT1.setText(_translate("MainWindow", "CT + 1"))
-        self.Button_CTMR.setText(_translate("MainWindow", "CT + MR"))
-        self.Button_MR1.setText(_translate("MainWindow", "MR + 1"))
+            _translate = QtCore.QCoreApplication.translate
+            MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+            self.Button_open.setText(_translate("MainWindow", "Open"))
+            self.Button_save.setText(_translate("MainWindow", "Save"))
+            self.Button_CT1.setText(_translate("MainWindow", "CT + 1"))
+            self.Button_CTMR.setText(_translate("MainWindow", "CT + MR"))
+            self.Button_MR1.setText(_translate("MainWindow", "MR + 1"))
+
+    def cropimageCT(self, event):
+        pos = event.pos()
+        self.leftMouseButtonPressed.emit(pos.x(), pos.y())
 
     def selectimageCT(self):
         dcmitem = self.List_CT.selectedItems()[0].text()
-        dcmimage = pydicom.dcmread(dcmitem).pixel_array
+        dcmimage = np.copy(pydicom.dcmread(dcmitem).pixel_array)
+        dcmimage = dcmimage[150:850, 150:850]
 
-        # dcmimage_tif = sk.imsave('test.tif', dcmimage)
-        # dcmimage_tif = sk.imread('test.tif')
-        # self.qlabel_CT.setPixmap(dcmimage_tif)
+        ## Qlabel
+        dcmimage = (dcmimage / 16).astype(np.uint8)
+        dcmimage = np.require(dcmimage, np.uint8, 'C')
+        h, w = dcmimage.shape
+        result = QtGui.QImage(dcmimage.data, w, h, QtGui.QImage.Format_Grayscale8)
+        pixmap = QtGui.QPixmap(result)
+        pixmap = pixmap.scaled(500, 500, QtCore.Qt.KeepAspectRatio)
+        self.qlabel_CT.setPixmap(pixmap)
+
+        # dcmimage = (dcmimage / 16).astype(np.uint8)
+        # dcmimage = np.require(dcmimage, np.uint8, 'C')
+        # h, w = dcmimage.shape
+        # result = QtGui.QImage(dcmimage.data, w, h, QtGui.QImage.Format_Grayscale8)
+        # pixmap = QtGui.QPixmap(result)
+        # pixmap = pixmap.scaled(self.graphics_CT.width(), self.graphics_CT.height(), QtCore.Qt.KeepAspectRatio)
+        # scene = QtWidgets.QGraphicsScene(self)
+        # scene.addPixmap(pixmap)
+        # self.graphics_CT.setScene(scene)
+
+
+    def selectimageMR(self):
+        dcmitem = self.List_MR.selectedItems()[0].text()
+        dcmimage = np.copy(pydicom.dcmread(dcmitem).pixel_array)
 
         dcmimage = (dcmimage / 16).astype(np.uint8)
         dcmimage = np.require(dcmimage, np.uint8, 'C')
         h, w = dcmimage.shape
         result = QtGui.QImage(dcmimage.data, w, h, QtGui.QImage.Format_Grayscale8)
-        self.qlabel_CT.setPixmap(QtGui.QPixmap.fromImage(result))
+        # self.qlabel_CT.setPixmap(QtGui.QPixmap.fromImage(result))
 
-    def selectimageMR(self):
-        dcmitem = ''
+        pixmap = QtGui.QPixmap(result)
+        pixmap = pixmap.scaled(500, 500, QtCore.Qt.KeepAspectRatio)
+        self.qlabel_MR.setPixmap(pixmap)
 
     def opendirectory(self):
         self.List_directory.clear()
