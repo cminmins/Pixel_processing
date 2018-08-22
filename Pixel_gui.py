@@ -5,14 +5,19 @@ import skimage.io as sk
 from skimage import data, io, filters, color
 
 from PyQt5 import QtCore, uic, QtWidgets, QtGui
-# gui = uic.loadUiType("untitled.ui")[0]
+gui = uic.loadUiType("untitled.ui")[0]
 
-class Pixel_gui(QtWidgets.QMainWindow):
-    leftMouseButtonPressed = QtCore.pyqtSignal(float, float)
+
+class Pixel_gui(QtWidgets.QMainWindow, gui):
+
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-    
+        self.dcmfilect = ''
+        self.dcmfilemr = ''
+        self.ct_pix = ''
+        self.mr_pix = ''
+
         ## 디렉토리 열고 dcm 리스트까지 추가    
         dir_name = ''
         self.Button_open.clicked.connect(self.opendirectory)
@@ -22,187 +27,67 @@ class Pixel_gui(QtWidgets.QMainWindow):
         self.List_CT.itemClicked.connect(self.selectimageCT)
         self.List_MR.itemClicked.connect(self.selectimageMR)
 
-        self.qlabel_CT.mousePressEvent(self.cropimageCT, self.event)
+        self.qlabel_CT.mousePressEvent = self.cropCT
+        self.qlabel_MR.mousePressEvent = self.cropMR
+        self.qlabel_overay.mousePressEvent = self.overlay
 
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1920, 1080)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
-        MainWindow.setSizePolicy(sizePolicy)
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
-        self.centralwidget.setObjectName("centralwidget")
-        self.Button_open = QtWidgets.QPushButton(self.centralwidget)
-        self.Button_open.setGeometry(QtCore.QRect(1860, 20, 51, 23))
-        self.Button_open.setObjectName("Button_open")
-        self.List_directory = QtWidgets.QListWidget(self.centralwidget)
-        self.List_directory.setGeometry(QtCore.QRect(1860, 50, 51, 401))
-        self.List_directory.setObjectName("List_directory")
-        self.qlabel_CT = QtWidgets.QLabel(self.centralwidget)
-        self.qlabel_CT.setGeometry(QtCore.QRect(10, 20, 500, 500))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.qlabel_CT.sizePolicy().hasHeightForWidth())
-        self.qlabel_CT.setSizePolicy(sizePolicy)
-        self.qlabel_CT.setStyleSheet("background-color:white\n"
-                                     "")
-        self.qlabel_CT.setFrameShape(QtWidgets.QFrame.Box)
-        self.qlabel_CT.setFrameShadow(QtWidgets.QFrame.Plain)
-        self.qlabel_CT.setLineWidth(1)
-        self.qlabel_CT.setMidLineWidth(0)
-        self.qlabel_CT.setText("")
-        self.qlabel_CT.setObjectName("qlabel_CT")
-        self.qlabel_CT_crop = QtWidgets.QLabel(self.centralwidget)
-        self.qlabel_CT_crop.setGeometry(QtCore.QRect(520, 20, 400, 500))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.qlabel_CT_crop.sizePolicy().hasHeightForWidth())
-        self.qlabel_CT_crop.setSizePolicy(sizePolicy)
-        self.qlabel_CT_crop.setStyleSheet("background-color:white\n"
-                                          "")
-        self.qlabel_CT_crop.setFrameShape(QtWidgets.QFrame.Box)
-        self.qlabel_CT_crop.setFrameShadow(QtWidgets.QFrame.Plain)
-        self.qlabel_CT_crop.setLineWidth(1)
-        self.qlabel_CT_crop.setMidLineWidth(0)
-        self.qlabel_CT_crop.setText("")
-        self.qlabel_CT_crop.setObjectName("qlabel_CT_crop")
-        self.qlabel_MR = QtWidgets.QLabel(self.centralwidget)
-        self.qlabel_MR.setGeometry(QtCore.QRect(1340, 20, 500, 500))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.qlabel_MR.sizePolicy().hasHeightForWidth())
-        self.qlabel_MR.setSizePolicy(sizePolicy)
-        self.qlabel_MR.setStyleSheet("background-color:white\n"
-                                     "")
-        self.qlabel_MR.setFrameShape(QtWidgets.QFrame.Box)
-        self.qlabel_MR.setFrameShadow(QtWidgets.QFrame.Plain)
-        self.qlabel_MR.setLineWidth(1)
-        self.qlabel_MR.setMidLineWidth(0)
-        self.qlabel_MR.setText("")
-        self.qlabel_MR.setObjectName("qlabel_MR")
-        self.qlabel_MR_crop = QtWidgets.QLabel(self.centralwidget)
-        self.qlabel_MR_crop.setGeometry(QtCore.QRect(930, 20, 400, 500))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.qlabel_MR_crop.sizePolicy().hasHeightForWidth())
-        self.qlabel_MR_crop.setSizePolicy(sizePolicy)
-        self.qlabel_MR_crop.setStyleSheet("background-color:white\n"
-                                          "")
-        self.qlabel_MR_crop.setFrameShape(QtWidgets.QFrame.Box)
-        self.qlabel_MR_crop.setFrameShadow(QtWidgets.QFrame.Plain)
-        self.qlabel_MR_crop.setLineWidth(1)
-        self.qlabel_MR_crop.setMidLineWidth(0)
-        self.qlabel_MR_crop.setText("")
-        self.qlabel_MR_crop.setObjectName("qlabel_MR_crop")
-        self.qlabel_overay = QtWidgets.QLabel(self.centralwidget)
-        self.qlabel_overay.setGeometry(QtCore.QRect(560, 530, 400, 500))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.qlabel_overay.sizePolicy().hasHeightForWidth())
-        self.qlabel_overay.setSizePolicy(sizePolicy)
-        self.qlabel_overay.setStyleSheet("background-color:white\n"
-                                         "")
-        self.qlabel_overay.setFrameShape(QtWidgets.QFrame.Box)
-        self.qlabel_overay.setFrameShadow(QtWidgets.QFrame.Plain)
-        self.qlabel_overay.setLineWidth(1)
-        self.qlabel_overay.setMidLineWidth(0)
-        self.qlabel_overay.setText("")
-        self.qlabel_overay.setObjectName("qlabel_overay")
-        self.List_CT = QtWidgets.QListWidget(self.centralwidget)
-        self.List_CT.setGeometry(QtCore.QRect(10, 550, 501, 191))
-        self.List_CT.setObjectName("List_CT")
-        self.List_MR = QtWidgets.QListWidget(self.centralwidget)
-        self.List_MR.setGeometry(QtCore.QRect(1340, 550, 501, 191))
-        self.List_MR.setObjectName("List_MR")
-        self.Button_save = QtWidgets.QPushButton(self.centralwidget)
-        self.Button_save.setGeometry(QtCore.QRect(1100, 650, 101, 31))
-        self.Button_save.setObjectName("Button_save")
-        self.Button_CT1 = QtWidgets.QPushButton(self.centralwidget)
-        self.Button_CT1.setGeometry(QtCore.QRect(990, 710, 101, 31))
-        self.Button_CT1.setObjectName("Button_CT1")
-        self.Button_CTMR = QtWidgets.QPushButton(self.centralwidget)
-        self.Button_CTMR.setGeometry(QtCore.QRect(1050, 750, 101, 31))
-        self.Button_CTMR.setObjectName("Button_CTMR")
-        self.Button_MR1 = QtWidgets.QPushButton(self.centralwidget)
-        self.Button_MR1.setGeometry(QtCore.QRect(1100, 710, 101, 31))
-        self.Button_MR1.setObjectName("Button_MR1")
-        self.horizontalSlider_2 = QtWidgets.QSlider(self.centralwidget)
-        self.horizontalSlider_2.setGeometry(QtCore.QRect(1080, 550, 160, 22))
-        self.horizontalSlider_2.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider_2.setObjectName("horizontalSlider_2")
-        self.verticalSlider_2 = QtWidgets.QSlider(self.centralwidget)
-        self.verticalSlider_2.setGeometry(QtCore.QRect(1270, 570, 22, 160))
-        self.verticalSlider_2.setOrientation(QtCore.Qt.Vertical)
-        self.verticalSlider_2.setObjectName("verticalSlider_2")
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1920, 21))
-        self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+    def cropCT(self, event):
+        x = event.pos().x()
+        y = event.pos().y()
+        CTcrop_x = int(x * 4)
+        CTcrop_y = int(y * 4)
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        CTcrop_image = np.copy(self.dcmfilect.pixel_array[CTcrop_y:CTcrop_y+800, CTcrop_x:CTcrop_x+700])
+        CTcrop_image = (CTcrop_image / 16).astype(np.uint8)
+        CTcrop_image = np.require(CTcrop_image, np.uint8, 'C')
+        h, w = CTcrop_image.shape
+        result = QtGui.QImage(CTcrop_image.data, w, h, QtGui.QImage.Format_Grayscale8)
+        pixmap = QtGui.QPixmap(result)
+        self.ct_pix = pixmap
+        self.qlabel_CT_crop.setPixmap(pixmap)
 
-    def retranslateUi(self, MainWindow):
-            _translate = QtCore.QCoreApplication.translate
-            MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-            self.Button_open.setText(_translate("MainWindow", "Open"))
-            self.Button_save.setText(_translate("MainWindow", "Save"))
-            self.Button_CT1.setText(_translate("MainWindow", "CT + 1"))
-            self.Button_CTMR.setText(_translate("MainWindow", "CT + MR"))
-            self.Button_MR1.setText(_translate("MainWindow", "MR + 1"))
+    def cropMR(self, event):
+        x = event.pos().x()
+        y = event.pos().y()
 
-    def cropimageCT(self, event):
-        pos = event.pos()
-        self.leftMouseButtonPressed.emit(pos.x(), pos.y())
+        MRcrop_image = np.copy(self.dcmfilemr.pixel_array[y:y+200, x:x+180])
+        MRcrop_image = (MRcrop_image / 16).astype(np.uint8)
+        MRcrop_image = np.require(MRcrop_image, np.uint8, 'C')
+        h, w = MRcrop_image.shape
+        result = QtGui.QImage(MRcrop_image.data, w, h, QtGui.QImage.Format_Grayscale8)
+        pixmap = QtGui.QPixmap(result)
+        pixmap = pixmap.scaled(self.qlabel_MR_crop.width(), self.qlabel_MR_crop.height(), QtCore.Qt.KeepAspectRatio)
+        self.mr_pix = pixmap
+        self.qlabel_MR_crop.setPixmap(pixmap)
+
+    def overlay(self, event):
+        over_pix = self.mr_pix - self.ct_pix + 1024
+        self.qlabel_overay.setPixmap(over_pix)
 
     def selectimageCT(self):
         dcmitem = self.List_CT.selectedItems()[0].text()
-        dcmimage = np.copy(pydicom.dcmread(dcmitem).pixel_array)
-        dcmimage = dcmimage[150:850, 150:850]
+        self.dcmfilect = pydicom.dcmread(dcmitem)
+        CTimage = np.copy(self.dcmfilect.pixel_array)
 
         ## Qlabel
-        dcmimage = (dcmimage / 16).astype(np.uint8)
-        dcmimage = np.require(dcmimage, np.uint8, 'C')
-        h, w = dcmimage.shape
-        result = QtGui.QImage(dcmimage.data, w, h, QtGui.QImage.Format_Grayscale8)
+        CTimage = (CTimage / 16).astype(np.uint8)
+        CTimage = np.require(CTimage, np.uint8, 'C')
+        h, w = CTimage.shape
+        result = QtGui.QImage(CTimage.data, w, h, QtGui.QImage.Format_Grayscale8)
         pixmap = QtGui.QPixmap(result)
-        pixmap = pixmap.scaled(500, 500, QtCore.Qt.KeepAspectRatio)
+        pixmap = pixmap.scaled(256, 256, QtCore.Qt.KeepAspectRatioByExpanding)
         self.qlabel_CT.setPixmap(pixmap)
-
-        # dcmimage = (dcmimage / 16).astype(np.uint8)
-        # dcmimage = np.require(dcmimage, np.uint8, 'C')
-        # h, w = dcmimage.shape
-        # result = QtGui.QImage(dcmimage.data, w, h, QtGui.QImage.Format_Grayscale8)
-        # pixmap = QtGui.QPixmap(result)
-        # pixmap = pixmap.scaled(self.graphics_CT.width(), self.graphics_CT.height(), QtCore.Qt.KeepAspectRatio)
-        # scene = QtWidgets.QGraphicsScene(self)
-        # scene.addPixmap(pixmap)
-        # self.graphics_CT.setScene(scene)
-
 
     def selectimageMR(self):
         dcmitem = self.List_MR.selectedItems()[0].text()
-        dcmimage = np.copy(pydicom.dcmread(dcmitem).pixel_array)
+        self.dcmfilemr = pydicom.dcmread(dcmitem)
+        MRimage = np.copy(self.dcmfilemr.pixel_array)
 
-        dcmimage = (dcmimage / 16).astype(np.uint8)
-        dcmimage = np.require(dcmimage, np.uint8, 'C')
-        h, w = dcmimage.shape
-        result = QtGui.QImage(dcmimage.data, w, h, QtGui.QImage.Format_Grayscale8)
-        # self.qlabel_CT.setPixmap(QtGui.QPixmap.fromImage(result))
-
+        MRimage = (MRimage / 16).astype(np.uint8)
+        MRimage = np.require(MRimage, np.uint8, 'C')
+        h, w = MRimage.shape
+        result = QtGui.QImage(MRimage.data, w, h, QtGui.QImage.Format_Grayscale8)
         pixmap = QtGui.QPixmap(result)
-        pixmap = pixmap.scaled(500, 500, QtCore.Qt.KeepAspectRatio)
         self.qlabel_MR.setPixmap(pixmap)
 
     def opendirectory(self):
@@ -246,4 +131,15 @@ if __name__ == '__main__':
     ex = Pixel_gui()
     ex.show()
     sys.exit(app.exec_())
+
+###Qlabel이 아닌 Qgraphics로 하는법
+# CTcrop_image = (CTcrop_image / 16).astype(np.uint8)
+# CTcrop_image = np.require(CTcrop_image, np.uint8, 'C')
+# h, w = CTcrop_image.shape
+# result = QtGui.QImage(CTcrop_image.data, w, h, QtGui.QImage.Format_Grayscale8)
+# pixmap = QtGui.QPixmap(result)
+# # pixmap = pixmap.scaled(self.graphics_CT.width(), self.graphics_CT.height(), QtCore.Qt.KeepAspectRatio)
+# scene = QtWidgets.QGraphicsScene(self)
+# scene.addPixmap(pixmap)
+# self.graphics_CT.setScene(scene)
 
