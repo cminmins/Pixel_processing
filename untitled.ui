@@ -148,7 +148,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QSlider" name="horizontalSlider_2">
+   <widget class="QSlider" name="mr_hor">
     <property name="geometry">
      <rect>
       <x>790</x>
@@ -157,11 +157,17 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="sliderPosition">
+     <number>0</number>
+    </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="QSlider" name="verticalSlider_2">
+   <widget class="QSlider" name="mr_ver">
     <property name="geometry">
      <rect>
       <x>1060</x>
@@ -169,6 +175,9 @@
       <width>22</width>
       <height>251</height>
      </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
     </property>
     <property name="orientation">
      <enum>Qt::Vertical</enum>
@@ -247,9 +256,9 @@
    <widget class="QListWidget" name="List_MR">
     <property name="geometry">
      <rect>
-      <x>339</x>
+      <x>370</x>
       <y>860</y>
-      <width>271</width>
+      <width>341</width>
       <height>131</height>
      </rect>
     </property>
@@ -283,9 +292,9 @@
    <widget class="QListWidget" name="List_CT">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>10</x>
       <y>860</y>
-      <width>271</width>
+      <width>341</width>
       <height>131</height>
      </rect>
     </property>
@@ -320,8 +329,8 @@
    <zorder>qlabel_CT</zorder>
    <zorder>Button_open</zorder>
    <zorder>qlabel_MR_crop</zorder>
-   <zorder>horizontalSlider_2</zorder>
-   <zorder>verticalSlider_2</zorder>
+   <zorder>mr_hor</zorder>
+   <zorder>mr_ver</zorder>
    <zorder>qlabel_CT_crop</zorder>
    <zorder>qlabel_overay</zorder>
    <zorder>List_directory</zorder>
