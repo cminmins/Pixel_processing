@@ -55,7 +55,7 @@ import numpy as np
 
 
 # # skimage.imsave('test.tif', program.pixel_array, plugin="tifffile")
-ski_prog = skimage.imread('test.tif')
+ski_prog = skimage.imread('1.tif')
 test = resize(ski_prog, (800, 800), anti_aliasing=False)
 io.imshow(test)
 io.show()

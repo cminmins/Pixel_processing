@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="524e1823-d917-4012-a97a-919985dddcf6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Pixel_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pixel_gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pixeltest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pixeltest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2.tif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled.ui" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,20 +86,37 @@
       <file leaf-file-name="Pixel_gui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="179" column="46" lean-forward="true" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
+            <state relative-caret-position="267">
+              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#2239#2350#0" />
+                <element signature="e#2393#2504#0" />
+                <element signature="e#2535#2613#0" />
+                <element signature="e#2645#2723#0" />
+                <element signature="e#2755#2833#0" />
+                <element signature="e#2866#2944#0" />
+                <element signature="e#2975#3030#0" />
+                <element signature="e#3062#3117#0" />
+                <element signature="e#3149#3204#0" />
+                <element signature="e#3237#3292#0" />
+                <element signature="e#3328#3363#0" />
+                <element signature="e#3401#3737#0" />
+                <element signature="e#3770#4452#0" />
+                <element signature="e#4486#5206#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="7.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/7.py">
+      <file leaf-file-name="pixeltest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pixeltest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="170" column="35" selection-start-line="170" selection-start-column="35" selection-end-line="170" selection-end-column="35" />
+            <state relative-caret-position="779">
+              <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,6 +152,11 @@
       <find>mousePressEvent</find>
       <find>dcmfilect</find>
       <find>ct_pix</find>
+      <find>self.crop</find>
+      <find>resizemr</find>
+      <find>resize</find>
+      <find>800</find>
+      <find>256</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,18 +170,18 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/min.py" />
         <option value="$PROJECT_DIR$/mainui.py" />
-        <option value="$PROJECT_DIR$/../Elysium/C2Mpreprocessing/preprocessing.py" />
         <option value="$PROJECT_DIR$/../PyQtImageViewer/QtImageViewer.py" />
         <option value="$PROJECT_DIR$/../pyqt-imageviewer/imageviewer.py" />
-        <option value="$PROJECT_DIR$/pixeltest.py" />
         <option value="$PROJECT_DIR$/7.py" />
+        <option value="$PROJECT_DIR$/../Elysium/C2Mpreprocessing/preprocessing.py" />
+        <option value="$PROJECT_DIR$/pixeltest.py" />
         <option value="$PROJECT_DIR$/Pixel_gui.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="width" value="1461" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -175,6 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,11 +202,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Elysium/C2Mpreprocessing" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/sungmin/Desktop/Pixel_processing/pixeltest.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -327,19 +343,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15300547" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3058455" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32008594" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3179377" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32968238" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.64888126" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36949515" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -382,8 +398,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Pixel_gui.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="80" />
+          <line>121</line>
+          <option name="timeStamp" value="115" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -393,7 +409,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="81" />
+      <option name="time" value="121" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -425,30 +441,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/image/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pydicom/dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="513" selection-start-line="513" selection-end-line="513" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/mritopng/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/png.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
@@ -526,13 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/io/_io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-386172602/cv2/cv2/__init__.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/tight_layout.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -544,9 +529,7 @@
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.tif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.tif" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/PyQt5/uic/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -628,21 +611,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="147" column="67" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="147" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/5.py" />
     <entry file="file://$PROJECT_DIR$/four.py" />
-    <entry file="file://$PROJECT_DIR$/6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="147" column="67" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="147" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/6.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -664,43 +635,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/io/_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Elysium/C2Mpreprocessing/preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="130" lean-forward="true" selection-start-line="87" selection-start-column="3" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="212" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/transform/_warps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-380">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="45" />
+        <state relative-caret-position="19">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="170" column="35" selection-start-line="170" selection-start-column="35" selection-end-line="170" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="205" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/numpy/lib/function_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="732" selection-start-line="732" selection-end-line="732" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pixeltest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="61" column="58" lean-forward="true" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
+        <state relative-caret-position="779">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Elysium/C2Mpreprocessing/preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="170" column="35" selection-start-line="170" selection-start-column="35" selection-end-line="170" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="179" column="46" lean-forward="true" selection-start-line="179" selection-start-column="46" selection-end-line="179" selection-end-column="46" />
+        <state relative-caret-position="267">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#2239#2350#0" />
+            <element signature="e#2393#2504#0" />
+            <element signature="e#2535#2613#0" />
+            <element signature="e#2645#2723#0" />
+            <element signature="e#2755#2833#0" />
+            <element signature="e#2866#2944#0" />
+            <element signature="e#2975#3030#0" />
+            <element signature="e#3062#3117#0" />
+            <element signature="e#3149#3204#0" />
+            <element signature="e#3237#3292#0" />
+            <element signature="e#3328#3363#0" />
+            <element signature="e#3401#3737#0" />
+            <element signature="e#3770#4452#0" />
+            <element signature="e#4486#5206#0" />
           </folding>
         </state>
       </provider>
