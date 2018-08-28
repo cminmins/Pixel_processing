@@ -3,6 +3,7 @@ import pydicom
 import numpy as np
 import skimage.io as sk
 from skimage.transform import resize
+from PyQt5.QtCore import Qt
 from PyQt5 import QtCore, uic, QtWidgets, QtGui
 gui = uic.loadUiType("untitled.ui")[0]
 
@@ -54,7 +55,6 @@ class Pixel_gui(QtWidgets.QMainWindow, gui):
         self.MR_left.clicked.connect(self.mr_left)
         self.MR_right.clicked.connect(self.mr_right)
 
-
         ##save 버튼
         self.Button_save.clicked.connect(self.savetiff)
 
@@ -64,35 +64,81 @@ class Pixel_gui(QtWidgets.QMainWindow, gui):
 
         self.qlabel_CT.mousePressEvent = self.ct_savepos
         self.qlabel_MR.mousePressEvent = self.mr_savepos
-        # self.qlabel_overay.mouseGrabber = self.overlay
 
         self.mr_hor.valueChanged.connect(self.changeRatio)
         self.mr_ver.valueChanged.connect(self.changeRatio)
 
+    def keyPressEvent(self, e):
+    #     # if e.key() == QtCore.Qt.Key_1:
+    #     #     디렉토리 1 증가
+    #     # elif e.key() == QtCore.Qt.Key_2:
+    #     #     CT+MR 리스트 1 증가
+    #     # elif e.key() == QtCore.Qt.Key_3:
+    #     #     CT 리스트 1 증가
+    #     # elif e.key() == QtCore.Qt.Key_4:
+    #     #     MR 리스트 1 증가
+
+        if e.key() == QtCore.Qt.Key_W:
+            print('W')
+            self.ct_up()
+        elif e.key() == QtCore.Qt.Key_S:
+            print('W')
+            self.ct_down()
+        elif e.key() == QtCore.Qt.Key_A:
+            print('W')
+            self.ct_left()
+        elif e.key() == QtCore.Qt.Key_D:
+            print('W')
+            self.ct_right()
+
+
+        elif e.key() == QtCore.Qt.Key_I:
+            self.mr_up()
+        elif e.key() == QtCore.Qt.Key_K:
+            self.mr_down()
+        elif e.key() == QtCore.Qt.Key_J:
+            self.mr_left()
+        elif e.key() == QtCore.Qt.Key_L:
+            self.mr_right()
+
+
+        elif e.key() == QtCore.Qt.Key_Enter:
+            self.savetiff()
+        elif e.key() == QtCore.Qt.Key_Backspace:
+            self.save_ratio()
+    #     # elif e.key() == QtCore.Qt.Key_9:
+    #     #     가로 크기 -
+    #     # elif e.key() == QtCore.Qt.Key_0:
+    #     #     가로 크기 +
+    #     # elif e.key() == QtCore.Qt.Key_Underscore:
+    #     #     세로 크기 -
+    #     # elif e.key() == QtCore.Qt.Key_Equal:
+    #     #     세로 크기 +
+
     def ct_savepos(self, event):
-        self.ct_pos_x = int(event.pos().x()) * 4
-        self.ct_pos_y = int(event.pos().y()) * 4
+        self.ct_pos_x = int(event.pos().x()) * 2
+        self.ct_pos_y = int(event.pos().y()) * 2
         self.cropCT()
 
     def mr_savepos(self, event):
-        self.mr_pos_x = int(event.pos().x()) * 4
-        self.mr_pos_y = int(event.pos().y()) * 4
+        self.mr_pos_x = int(event.pos().x()) * 2
+        self.mr_pos_y = int(event.pos().y()) * 2
         self.cropMR()
 
     def ct_up(self):
-        self.ct_pos_y = self.ct_pos_y - 1
+        self.ct_pos_y = self.ct_pos_y + 4
         self.cropCT()
         self.overlay()
     def ct_down(self):
-        self.ct_pos_y = self.ct_pos_y + 1
+        self.ct_pos_y = self.ct_pos_y - 4
         self.cropCT()
         self.overlay()
     def ct_left(self):
-        self.ct_pos_x = self.ct_pos_x - 1
+        self.ct_pos_x = self.ct_pos_x + 4
         self.cropCT()
         self.overlay()
     def ct_right(self):
-        self.ct_pos_x = self.ct_pos_x + 1
+        self.ct_pos_x = self.ct_pos_x - 4
         self.cropCT()
         self.overlay()
 
@@ -116,12 +162,14 @@ class Pixel_gui(QtWidgets.QMainWindow, gui):
     def resize_ratio(self):
         y = self.mr_pos_y
         x = self.mr_pos_x
-        width = self.change_width
-        height = self.change_height
+        width = int(self.change_width/2)
+        height = int(self.change_height)
 
-        MRcrop_image = np.copy(self.resizemr[y:y + height, x:x + width])
+        MRcrop_image = np.copy(self.resizemr[y:y+height, x-width:x+width])
         self.save_mr = resize(MRcrop_image, (700, 600), anti_aliasing=True, order=3)
         self.save_mr = (self.save_mr * 65535).astype(np.uint16)
+
+        pixmap = self.display_qlabel(self.resizemr, 1, x, y)
 
     def overlay(self):
         CTover_image = resize(self.save_ct, (450, 400), anti_aliasing=True, order=3)
@@ -129,19 +177,17 @@ class Pixel_gui(QtWidgets.QMainWindow, gui):
         MRover_image = resize(self.save_mr, (450, 400), anti_aliasing=True, order=3)
         MRover_image = (MRover_image * 65535).astype(np.uint16)
 
-        over_image = CTover_image - MRover_image + 1024
-        over_image = (over_image / 16).astype(np.uint8)
-        over_image = np.require(over_image, np.uint8, 'C')
-        h, w = over_image.shape
-        over_result = QtGui.QImage(over_image.data, w, h, QtGui.QImage.Format_Grayscale8)
-        over_pixmap = QtGui.QPixmap(over_result)
+        over_image = (CTover_image - MRover_image) * 2
+        over_pixmap = self.display_qlabel(over_image)
         self.qlabel_overay.setPixmap(over_pixmap)
 
     def savetiff(self):
+        ### 디렉토리명 폴더 안에 overlay 폴더를 만들기
         selecteditem = self.List_directory.selectedItems()[0].text()
         current_dir = self.dir_name + '\\' + selecteditem
         over_dir = current_dir + "\\overlay"
 
+        ### overlay 폴더, CT, MR 없을 경우 생성
         if not os.path.isdir(over_dir):
             os.mkdir(over_dir)
         if not os.path.isdir(over_dir + "\\CT"):
@@ -149,97 +195,112 @@ class Pixel_gui(QtWidgets.QMainWindow, gui):
         if not os.path.isdir(over_dir + "\\MR"):
             os.mkdir(over_dir + "\\MR")
 
+        ### 각각의 경로에 순번 + tif 이름으로 저장
         ct_name = over_dir + "\\CT\\" + str(self.name_count) + ".tif"
         mr_name = over_dir + "\\MR\\" + str(self.name_count) + ".tif"
         sk.imsave(ct_name, self.save_ct, plugin='tifffile')
         sk.imsave(mr_name, self.save_mr, plugin='tifffile')
         self.name_count = self.name_count + 1
 
-    def show_mr(self):
-        MRcrop_image = self.save_mr
-        MRcrop_image = (MRcrop_image / 16).astype(np.uint8)
-        MRcrop_image = np.require(MRcrop_image, np.uint8, 'C')
-        h, w = MRcrop_image.shape
-        result = QtGui.QImage(MRcrop_image.data, w, h, QtGui.QImage.Format_Grayscale8)
-        pixmap = QtGui.QPixmap(result)
-        pixmap = pixmap.scaled(self.qlabel_CT_crop.height(), self.qlabel_CT_crop.width(), QtCore.Qt.KeepAspectRatioByExpanding)
-        self.qlabel_MR_crop.setPixmap(pixmap)
-
     def changeRatio(self):
         x = self.mr_pos_x
         y = self.mr_pos_y
-        self.change_width = 600 + self.mr_hor.value() * 2
-        self.change_height = 700 + self.mr_ver.value() * 2
+        self.change_width = 600 + self.mr_hor.value() * 4
+        self.change_height = 700 + self.mr_ver.value() * 4
         self.resize_ratio()
         self.cropMR()
 
     def cropCT(self):
-        ## 마우스 클릭한 곳의 좌표 256 -> 1024
-        # self.ct_pos_x = int(event.pos().x()) * 4
-        # self.ct_pos_y = int(event.pos().y()) * 4
         CTcrop_x = self.ct_pos_x
         CTcrop_y = self.ct_pos_y
 
-        ## 원본 이미지 배열을 복사하고 저장할 변수에도 예비 저장
-        CTcrop_image = np.copy(self.dcmfilect.pixel_array[CTcrop_y:CTcrop_y+700, CTcrop_x:CTcrop_x+600])
+        ### ROI를 저장변수에 저장
+        CTcrop_image = np.copy(self.dcmfilect.pixel_array[CTcrop_y:CTcrop_y+700, CTcrop_x-300:CTcrop_x+300])
         self.save_ct = CTcrop_image.astype(np.uint16)
 
-        ## 이미지를 화면에 띄우기 위해서 8비트로 낮춤
-        CTcrop_image = (CTcrop_image / 16).astype(np.uint8)
-        CTcrop_image = np.require(CTcrop_image, np.uint8, 'C')
-
-        # CTcrop_image = apply_window_setting(CTcrop_image, 30, 200)
-
-        h, w = CTcrop_image.shape
-        result = QtGui.QImage(CTcrop_image.data, w, h, QtGui.QImage.Format_Grayscale8)
-        pixmap = QtGui.QPixmap(result)
-        pixmap = pixmap.scaled(self.qlabel_CT_crop.height(), self.qlabel_CT_crop.width(), QtCore.Qt.KeepAspectRatioByExpanding)
+        ### ROI를 CT_crop에 출력
+        pixmap = self.display_qlabel(self.save_ct)
+        pixmap = pixmap.scaled(self.qlabel_CT_crop.width(), self.qlabel_CT_crop.height(), QtCore.Qt.KeepAspectRatioByExpanding)
         self.qlabel_CT_crop.setPixmap(pixmap)
 
+        ### 원본에서 ROI에 네모박스 출력
+        pixmap = self.display_qlabel(self.dcmfilect.pixel_array, 1, self.ct_pos_x, self.ct_pos_y)
+        pixmap = pixmap.scaled(self.qlabel_CT.width(), self.qlabel_CT.height(), QtCore.Qt.KeepAspectRatioByExpanding)
+        self.qlabel_CT.setPixmap(pixmap)
+
     def cropMR(self):
-        ## 마우스 클릭한 곳의 좌표 256 -> 256
-        # self.mr_pos_x = int(event.pos().x()) * 4
-        # self.mr_pos_y = int(event.pos().y()) * 4
         x = self.mr_pos_x
         y = self.mr_pos_y
 
-        ## 리사이즈 1024 파일에서 불러와서 800 * 700으로 저장
-        MRcrop_image = np.copy(self.resizemr)
-        self.save_mr = np.copy(MRcrop_image[y:y+700, x:x+600])
+        ### ROI를 저장변수에 저장
+        self.save_mr = np.copy(self.resizemr[y:y+700, x-300:x+300])
+        ## astype으로 uint16할 필요가 있을까?
+
+        ### 현재 비율대로 사진 조정
         self.resize_ratio()
-        self.show_mr()
+
+        ### ROI를 MR_crop에 출력
+        pixmap = self.display_qlabel(self.save_mr)
+        pixmap = pixmap.scaled(self.qlabel_MR_crop.width(), self.qlabel_MR_crop.height(), QtCore.Qt.KeepAspectRatioByExpanding)
+        self.qlabel_MR_crop.setPixmap(pixmap)
+
+        ### 오버레이 이미지 출력
         self.overlay()
 
+        ### 원본에서 ROI에 네모박스 출력
+        pixmap = self.display_qlabel(self.resizemr, 1, self.mr_pos_x, self.mr_pos_y)
+        pixmap = pixmap.scaled(self.qlabel_MR.width(), self.qlabel_MR.height(), QtCore.Qt.KeepAspectRatioByExpanding)
+        self.qlabel_MR.setPixmap(pixmap)
+
     def selectimageCT(self):
+        ### List_CT에서 선택파일명을 가져온 다음에 pydicom으로 열기
         dcmitem = self.List_CT.selectedItems()[0].text()
         self.dcmfilect = pydicom.dcmread(dcmitem)
-        CTimage = np.copy(self.dcmfilect.pixel_array)
 
-        ## Qlabel
-        CTimage = (CTimage / 16).astype(np.uint8)
-        CTimage = np.require(CTimage, np.uint8, 'C')
-        h, w = CTimage.shape
-        result = QtGui.QImage(CTimage.data, w, h, QtGui.QImage.Format_Grayscale8)
-        pixmap = QtGui.QPixmap(result)
-        pixmap = pixmap.scaled(self.qlabel_CT.height(), self.qlabel_CT.width(), QtCore.Qt.KeepAspectRatioByExpanding)
+        ### 선택한 파일이미지를 CT에 출력
+        pixmap = self.display_qlabel(self.dcmfilect.pixel_array)
+        pixmap = pixmap.scaled(self.qlabel_CT.width(), self.qlabel_CT.height(), QtCore.Qt.KeepAspectRatioByExpanding)
         self.qlabel_CT.setPixmap(pixmap)
 
     def selectimageMR(self):
+        ### List MR에서 선택파일명을 가져온 다음에 pydicom으로 열기
         dcmitem = self.List_MR.selectedItems()[0].text()
         self.dcmfilemr = pydicom.dcmread(dcmitem)
 
+        ### 256 * 256 -> 1024 * 1024로 변환
         self.resizemr = np.copy(self.dcmfilemr.pixel_array)
         self.resizemr = resize(self.resizemr, (1024, 1024), anti_aliasing=True, order=3)
         self.resizemr = (self.resizemr * 32767).astype(np.uint16)
+        ### 65535가 아니라 32767??
 
-        MRimage = np.copy(self.resizemr)
-        MRimage = (MRimage / 16).astype(np.uint8)
-        MRimage = np.require(MRimage, np.uint8, 'C')
-        h, w = MRimage.shape
-        result = QtGui.QImage(MRimage.data, w, h, QtGui.QImage.Format_Grayscale8)
-        pixmap = QtGui.QPixmap(result)
-        pixmap = pixmap.scaled(self.qlabel_MR.height(), self.qlabel_MR.width(), QtCore.Qt.KeepAspectRatioByExpanding)
+        ### 선택한 파일이미지를 MR에 출력
+        pixmap = self.display_qlabel(self.resizemr)
+        pixmap = pixmap.scaled(self.qlabel_MR.width(), self.qlabel_MR.height(), QtCore.Qt.KeepAspectRatioByExpanding)
         self.qlabel_MR.setPixmap(pixmap)
+
+    def display_qlabel(self, base, drawRect=0, x=0, y=0):
+        if drawRect == 0:
+            image = np.copy(base)
+            image = (image / 16).astype(np.uint8)
+            image = np.require(image, np.uint8, 'C')
+            h, w = image.shape
+            result = QtGui.QImage(image.data, w, h, QtGui.QImage.Format_Grayscale8)
+            pixmap = QtGui.QPixmap(result)
+        elif drawRect == 1:
+            image = np.copy(base)
+            image = (image / 16).astype(np.uint8)
+            image = np.require(image, np.uint8, 'C')
+            h, w = image.shape
+            result = QtGui.QImage(image.data, w, h, QtGui.QImage.Format_Grayscale8)
+            painter = QtGui.QPainter()
+            painter.begin(result)
+            painter.setPen(QtCore.Qt.white)
+            width = int(self.change_width/2)
+            height = int(self.change_height)
+            painter.drawRect(x-width, y, width * 2, height)
+            painter.end()
+            pixmap = QtGui.QPixmap(result)
+        return pixmap
 
     def opendirectory(self):
         self.List_directory.clear()
@@ -277,24 +338,14 @@ class Pixel_gui(QtWidgets.QMainWindow, gui):
             dcmitem = QtWidgets.QListWidgetItem(item)
             self.List_MR.addItem(dcmitem)
 
+
+
+
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     ex = Pixel_gui()
     ex.show()
     sys.exit(app.exec_())
-
-###Qlabel이 아닌 Qgraphics로 하는법
-# CTcrop_image = (CTcrop_image / 16).astype(np.uint8)
-# CTcrop_image = np.require(CTcrop_image, np.uint8, 'C')
-# h, w = CTcrop_image.shape
-# result = QtGui.QImage(CTcrop_image.data, w, h, QtGui.QImage.Format_Grayscale8)
-# pixmap = QtGui.QPixmap(result)
-# # pixmap = pixmap.scaled(self.graphics_CT.width(), self.graphics_CT.height(), QtCore.Qt.KeepAspectRatio)
-# scene = QtWidgets.QGraphicsScene(self)
-# scene.addPixmap(pixmap)
-# self.graphics_CT.setScene(scene)
-
-
 
 # medcon -f *.nii -split3d -c dicom -b16
 # medcon -f *.dcm -stack3d -c nifty -b16

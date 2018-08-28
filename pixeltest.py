@@ -7,19 +7,19 @@ from skimage.transform import resize
 from skimage import data, io, filters, color
 import numpy as np
 #
-# org_ct = pydicom.dcmread('30005.dcm')
-# a1 = org_ct.pixel_array
-# after_org = pydicom.dcmread('m000-s0001-Reslice_ct.dcm')
-# a2 = after_org.pixel_array
-#
+org_ct = pydicom.dcmread('30008.dcm')
+a1 = org_ct.pixel_array
+after_org = pydicom.dcmread('m000-s0004-Reslice_ct_1.dcm')
+a2 = after_org.pixel_array
+
 # org_mr = pydicom.dcmread('60002.dcm')
 # b1 = org_mr.pixel_array
-# res_dcm = pydicom.dcmread('m001-s0001-Reslice_mri.dcm')
+# res_dcm = pydicom.dcmread('m000-s0001-Reslice_mri_36.dcm')
 # b2 = res_dcm.pixel_array
-#
-# print((a1==a2).all())
+
+print((a1==a2).all())
 # print((b1==b2).all())
-#
+
 # CT_image = nib.load('m000-stacks-30005.nii')
 # CT_array = np.copy(CT_image.get_data())
 # CT_array = CT_array.astype(np.int16)
@@ -55,10 +55,10 @@ import numpy as np
 
 
 # # skimage.imsave('test.tif', program.pixel_array, plugin="tifffile")
-ski_prog = skimage.imread('1.tif')
-test = resize(ski_prog, (800, 800), anti_aliasing=False)
-io.imshow(test)
-io.show()
+# ski_prog = skimage.imread('1.tif')
+# test = resize(ski_prog, (800, 800), anti_aliasing=False)
+# io.imshow(test)
+# io.show()
 # ski_prog_gray = skimage.imread('test.tif', as_gray=True)
 
 #### skimage로 저장하면 무압축
