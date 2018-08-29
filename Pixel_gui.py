@@ -457,11 +457,12 @@ class Pixel_gui(QtWidgets.QMainWindow, gui):
             dcmitem = QtWidgets.QListWidgetItem(item)
             self.List_MR.addItem(dcmitem)
 
+        ## 위에 실행하면 dcmfilect -> ct_shape에 해상도가 저장됨
         self.List_CT.setCurrentRow(0)
         self.selectimageCT()
         self.List_MR.setCurrentRow(0)
         self.selectimageMR()
-
+        ## Default ROI 사이즈를 정하기
         if self.ct_shape == (1024, 1024):
             self.ROI_height = 700
             self.ROI_width = 600
