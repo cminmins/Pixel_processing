@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="524e1823-d917-4012-a97a-919985dddcf6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pixel_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pixel_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pixeltest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pixeltest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled.ui" beforeDir="false" afterPath="$PROJECT_DIR$/untitled.ui" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -86,37 +83,50 @@
       <file leaf-file-name="Pixel_gui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="326" column="45" lean-forward="true" selection-start-line="326" selection-start-column="45" selection-end-line="326" selection-end-column="45" />
+            <state relative-caret-position="177">
+              <caret line="444" column="26" selection-start-line="444" selection-start-column="26" selection-end-line="444" selection-end-column="26" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
                 <element signature="e#301#527#0" />
-                <element signature="e#4037#4377#0" />
-                <element signature="e#4329#4436#0" />
-                <element signature="e#3860#4081#0" />
-                <element signature="e#4149#4395#0" />
-                <element signature="e#4169#4219#0" />
-                <element signature="e#4542#4867#0" />
-                <element signature="e#4913#5199#0" />
-                <element signature="e#5276#5450#0" />
-                <element signature="e#4874#5217#0" />
-                <element signature="e#5253#5555#0" />
-                <element signature="e#5018#5096#0" />
-                <element signature="e#5128#5206#0" />
-                <element signature="e#5238#5316#0" />
-                <element signature="e#5349#5427#0" />
-                <element signature="e#5477#5532#0" />
-                <element signature="e#5564#5619#0" />
-                <element signature="e#5651#5706#0" />
-                <element signature="e#5739#5794#0" />
-                <element signature="e#5989#6401#0" />
-                <element signature="e#6480#6929#0" />
-                <element signature="e#6977#7814#0" />
-                <element signature="e#7871#8081#0" />
-                <element signature="e#12120#12536#0" />
-                <element signature="e#12556#13459#0" />
-                <element signature="e#16243#16279#0" />
+                <element signature="e#2580#3936#0" />
+                <element signature="e#3975#4314#0" />
+                <element signature="e#4353#4692#0" />
+                <element signature="e#4735#4981#0" />
+                <element signature="e#5024#5270#0" />
+                <element signature="e#5318#5373#0" />
+                <element signature="e#5419#5744#0" />
+                <element signature="e#5790#6115#0" />
+                <element signature="e#6153#6327#0" />
+                <element signature="e#6370#6671#0" />
+                <element signature="e#6714#7015#0" />
+                <element signature="e#7065#7143#0" />
+                <element signature="e#7175#7253#0" />
+                <element signature="e#7285#7363#0" />
+                <element signature="e#7396#7474#0" />
+                <element signature="e#7524#7579#0" />
+                <element signature="e#7611#7666#0" />
+                <element signature="e#7698#7753#0" />
+                <element signature="e#7786#7841#0" />
+                <element signature="e#7922#7957#0" />
+                <element signature="e#8036#8473#0" />
+                <element signature="e#8552#9001#0" />
+                <element signature="e#9049#9886#0" />
+                <element signature="e#9943#10168#0" />
+                <element signature="e#10229#11110#0" />
+                <element signature="e#11171#12080#0" />
+                <element signature="e#12150#12950#0" />
+                <element signature="e#13805#14898#0" />
+                <element signature="e#14955#15371#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_warps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/transform/_warps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="709" lean-forward="true" selection-start-line="709" selection-end-line="711" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -124,7 +134,7 @@
       <file leaf-file-name="pixeltest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pixeltest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="1976">
               <caret line="113" selection-start-line="113" selection-end-line="113" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -136,8 +146,8 @@
       <file leaf-file-name="2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="229" column="70" lean-forward="true" selection-start-line="11" selection-end-line="229" selection-end-column="70" />
+            <state relative-caret-position="4351">
+              <caret line="229" column="70" selection-start-line="11" selection-end-line="229" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -153,8 +163,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>main</find>
-      <find>ImageViewer</find>
       <find>next_im</find>
       <find>nextImg</find>
       <find>qimage</find>
@@ -183,6 +191,8 @@
       <find>change_width</find>
       <find>display_qlabel</find>
       <find>ROI_height</find>
+      <find>cubic</find>
+      <find>order</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -208,9 +218,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-69" />
-    <option name="y" value="49" />
-    <option name="width" value="974" />
-    <option name="height" value="989" />
+    <option name="y" value="48" />
+    <option name="width" value="975" />
+    <option name="height" value="990" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -383,7 +393,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32968238" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36894274" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3673835" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -430,16 +440,6 @@
           <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Pixel_gui.py</url>
-          <line>231</line>
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Pixel_gui.py</url>
-          <line>329</line>
-          <option name="timeStamp" value="165" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pixeltest.py</url>
           <line>13</line>
           <option name="timeStamp" value="170" />
@@ -452,7 +452,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="174" />
+      <option name="time" value="182" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -685,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/transform/_warps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-386172602/PyQt5/QtWidgets/QAbstractItemView.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -701,7 +694,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pixeltest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="1976">
           <caret line="113" selection-start-line="113" selection-end-line="113" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
@@ -718,43 +711,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="229" column="70" lean-forward="true" selection-start-line="11" selection-end-line="229" selection-end-column="70" />
+        <state relative-caret-position="4351">
+          <caret line="229" column="70" selection-start-line="11" selection-end-line="229" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/transform/_warps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="709" lean-forward="true" selection-start-line="709" selection-end-line="711" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="326" column="45" lean-forward="true" selection-start-line="326" selection-start-column="45" selection-end-line="326" selection-end-column="45" />
+        <state relative-caret-position="177">
+          <caret line="444" column="26" selection-start-line="444" selection-start-column="26" selection-end-line="444" selection-end-column="26" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
             <element signature="e#301#527#0" />
-            <element signature="e#4037#4377#0" />
-            <element signature="e#4329#4436#0" />
-            <element signature="e#3860#4081#0" />
-            <element signature="e#4149#4395#0" />
-            <element signature="e#4169#4219#0" />
-            <element signature="e#4542#4867#0" />
-            <element signature="e#4913#5199#0" />
-            <element signature="e#5276#5450#0" />
-            <element signature="e#4874#5217#0" />
-            <element signature="e#5253#5555#0" />
-            <element signature="e#5018#5096#0" />
-            <element signature="e#5128#5206#0" />
-            <element signature="e#5238#5316#0" />
-            <element signature="e#5349#5427#0" />
-            <element signature="e#5477#5532#0" />
-            <element signature="e#5564#5619#0" />
-            <element signature="e#5651#5706#0" />
-            <element signature="e#5739#5794#0" />
-            <element signature="e#5989#6401#0" />
-            <element signature="e#6480#6929#0" />
-            <element signature="e#6977#7814#0" />
-            <element signature="e#7871#8081#0" />
-            <element signature="e#12120#12536#0" />
-            <element signature="e#12556#13459#0" />
-            <element signature="e#16243#16279#0" />
+            <element signature="e#2580#3936#0" />
+            <element signature="e#3975#4314#0" />
+            <element signature="e#4353#4692#0" />
+            <element signature="e#4735#4981#0" />
+            <element signature="e#5024#5270#0" />
+            <element signature="e#5318#5373#0" />
+            <element signature="e#5419#5744#0" />
+            <element signature="e#5790#6115#0" />
+            <element signature="e#6153#6327#0" />
+            <element signature="e#6370#6671#0" />
+            <element signature="e#6714#7015#0" />
+            <element signature="e#7065#7143#0" />
+            <element signature="e#7175#7253#0" />
+            <element signature="e#7285#7363#0" />
+            <element signature="e#7396#7474#0" />
+            <element signature="e#7524#7579#0" />
+            <element signature="e#7611#7666#0" />
+            <element signature="e#7698#7753#0" />
+            <element signature="e#7786#7841#0" />
+            <element signature="e#7922#7957#0" />
+            <element signature="e#8036#8473#0" />
+            <element signature="e#8552#9001#0" />
+            <element signature="e#9049#9886#0" />
+            <element signature="e#9943#10168#0" />
+            <element signature="e#10229#11110#0" />
+            <element signature="e#11171#12080#0" />
+            <element signature="e#12150#12950#0" />
+            <element signature="e#13805#14898#0" />
+            <element signature="e#14955#15371#0" />
           </folding>
         </state>
       </provider>
