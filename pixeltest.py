@@ -2,23 +2,59 @@ import nibabel as nib
 import pydicom
 from dipy.align.reslice import reslice
 import cv2
+import os.path
+import glob
 import skimage.io as skimage
 from skimage.transform import resize
 from skimage import data, io, filters, color
 import numpy as np
-#
-org_ct = pydicom.dcmread('30008.dcm')
-a1 = org_ct.pixel_array
-after_org = pydicom.dcmread('m000-s0004-Reslice_ct_1.dcm')
-a2 = after_org.pixel_array
 
-# org_mr = pydicom.dcmread('60002.dcm')
-# b1 = org_mr.pixel_array
-# res_dcm = pydicom.dcmread('m000-s0001-Reslice_mri_36.dcm')
-# b2 = res_dcm.pixel_array
+#### DICOM 해상도 검색
+# base_path = "D:\\C2M 작업폴더\원본(특정부위만 골라낸)"
+# semi_path = os.listdir(base_path)
+# print("#########   CT   ##########")
+# for k in semi_path:
+#     bottom_path = os.listdir(base_path + "\\" + k)
+#     for i in bottom_path:
+#         current_dir = base_path + "\\" + k + "\\" + i
+#         path_ct = current_dir + "\\CT"
+# 
+#         ct_default = glob.glob(os.path.join(path_ct, "*.dcm"))
+#         for t in ct_default:
+#             ct_dicom = pydicom.dcmread(t)
+#             pix_shape = ct_dicom.pixel_array.shape
+#             if pix_shape != (1024, 1024):
+#                 print(pix_shape, " file : ", t)
+#                 break
+# 
+# print("#########   MR   ##########")
+# for k in semi_path:
+#     bottom_path = os.listdir(base_path + "\\" + k)
+#     for i in bottom_path:
+#         current_dir = base_path + "\\" + k + "\\" + i
+#         path_t2 = current_dir + "\\MRI\\T2"
+# 
+#         mr_default = glob.glob(os.path.join(path_t2, "*.dcm"))
+#         for t in mr_default:
+#             mr_dicom = pydicom.dcmread(t)
+#             pix_shape = mr_dicom.pixel_array.shape
+#             if pix_shape != (256, 256):
+#                 print(pix_shape, " file : ", t)
+#                 break
 
-print((a1==a2).all())
-# print((b1==b2).all())
+
+# org_ct = pydicom.dcmread('30008.dcm')
+# a1 = org_ct.pixel_array
+# after_org = pydicom.dcmread('m000-s0004-Reslice_ct_1.dcm')
+# a2 = after_org.pixel_array
+
+org_mr = pydicom.dcmread('30007.dcm')
+b1 = org_mr.pixel_array
+res_dcm = pydicom.dcmread('m000-s0001-Reslice_ct_452.dcm')
+b2 = res_dcm.pixel_array
+
+# print((a1==a2).all())
+print((b1==b2).all())
 
 # CT_image = nib.load('m000-stacks-30005.nii')
 # CT_array = np.copy(CT_image.get_data())
