@@ -2,7 +2,181 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="524e1823-d917-4012-a97a-919985dddcf6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Pixel_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pixel_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/30005.dcm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/bet.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/dcm2nii 사용법.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/dcm2nii.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/dcm2nii.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/dcm2niigui.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/dcm2niigui.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/attention.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/cutr.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/fmri2r.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/fmri3r.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/fmrir.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/1.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/10.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/11.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/12.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/13.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/14.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/15.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/16.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/17.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/18.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/19.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/2.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/20.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/21.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/22.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/23.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/24.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/3.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/4.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/5.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/6.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/7.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/8.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/9.voi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/binomial.val" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/lesions/continuous.val" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/example/saccades.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/examplecut.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/examplefmri.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/examplefmri2.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/bat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/dcm2nii.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/48x36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/autocrop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/dcm2niigui.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/design.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/draw/3dfill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/draw/circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/draw/closedpen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/draw/fill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/draw/pen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/examplefmri.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/examplefmri_multi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/gtk1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/gtk2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/layers.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/lazarus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/lesionsum.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/lieber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/main.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/meld.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/nifti.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/npm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/osx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/patient9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/prefs.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/renderAAL.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/space.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/splash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/threshold.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/transparency.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/val.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/windows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/images/zhistogram.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/install.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/peri/images/combination.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/peri/images/eventtime.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/peri/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/peri/images/meld.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/peri/images/periset.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/peri/images/peristimulusplot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/peri/images/perivol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/peri/images/raw.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/peri/images/regressed.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/peri/images/timeline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/peri/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/stats.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/tutorial/images/design.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/tutorial/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/tutorial/images/lesionsum.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/tutorial/images/lieber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/tutorial/images/meld.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/tutorial/images/npm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/tutorial/images/patient9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/tutorial/images/results.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/tutorial/images/threshold.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/tutorial/images/val.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/tutorial/images/zhistogram.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/html/tutorial/mricrondata.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/1hot.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/2winter.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/3warm.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/4cool.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/5redyell.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/6bluegrn.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/GE_color.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/HOTIRON.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/NIH.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/NIH_fire.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/NIH_ice.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/Rainramp.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/actc.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/blackbdy.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/bluegray.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/bone.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/cardiac.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/cortex.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/flow.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/french.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/gold.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/gooch.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/greengray.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/lu.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/pink.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/redgray.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/spectrum.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/surface.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/test.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/testlinear.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/textlut.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/x_hot.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/lut/x_rain.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/mricron.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/mricron.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/mricron32.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/mricron32.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/multislice/ax.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/multislice/coro.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/multislice/default.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/multislice/sag.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/npm.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/pigz.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/render/default.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/AICHAmc.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/AICHAmc.nii.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/AICHAmc.nii.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/HarvardOxford-cort-maxprob-thr0-1mm.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/JHU-WhiteMatter-labels-1mm.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/JHU-WhiteMatter-labels-1mm.nii.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/JHU-WhiteMatter-labels-1mm.nii.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/JHU-WhiteMatter-labels-2mm.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/JHU-WhiteMatter-labels-2mm.nii.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/JHU-WhiteMatter-labels-2mm.nii.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/aal.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/aal.nii.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/aal.nii.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/brodmann.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/brodmann.nii.lut" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/ch2.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/ch2bet.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/ch2better.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/inia19-NeuroMaps.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/inia19-t1-brain.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dicom2nii/templates/natbrainlab.nii.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled.ui" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,40 +257,44 @@
       <file leaf-file-name="Pixel_gui.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="50" column="65" lean-forward="true" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="65" />
+            <state relative-caret-position="95">
+              <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
                 <element signature="e#301#527#0" />
                 <element signature="e#2580#3936#0" />
-                <element signature="e#3975#4314#0" />
+                <element signature="e#4126#4372#0" />
+                <element signature="e#4414#4660#0" />
+                <element signature="e#4722#4777#0" />
+                <element signature="e#4822#5147#0" />
+                <element signature="e#5192#5517#0" />
+                <element signature="e#5554#5728#0" />
+                <element signature="e#5778#5856#0" />
+                <element signature="e#5888#5966#0" />
+                <element signature="e#5998#6076#0" />
+                <element signature="e#6109#6187#0" />
+                <element signature="e#6237#6292#0" />
+                <element signature="e#6324#6379#0" />
+                <element signature="e#6411#6466#0" />
+                <element signature="e#6499#6554#0" />
+                <element signature="e#4029#4368#0" />
+                <element signature="e#4422#4833#0" />
                 <element signature="e#4353#4692#0" />
-                <element signature="e#4735#4981#0" />
-                <element signature="e#5024#5270#0" />
-                <element signature="e#5318#5373#0" />
-                <element signature="e#5419#5744#0" />
-                <element signature="e#5790#6115#0" />
-                <element signature="e#6153#6327#0" />
-                <element signature="e#6370#6671#0" />
-                <element signature="e#6714#7015#0" />
-                <element signature="e#7065#7143#0" />
-                <element signature="e#7175#7253#0" />
-                <element signature="e#7285#7363#0" />
-                <element signature="e#7396#7474#0" />
-                <element signature="e#7524#7579#0" />
-                <element signature="e#7611#7666#0" />
-                <element signature="e#7698#7753#0" />
-                <element signature="e#7786#7841#0" />
-                <element signature="e#7922#7957#0" />
-                <element signature="e#8036#8473#0" />
-                <element signature="e#8552#9001#0" />
-                <element signature="e#9049#9886#0" />
-                <element signature="e#9943#10168#0" />
-                <element signature="e#10229#11110#0" />
-                <element signature="e#11171#12080#0" />
-                <element signature="e#12150#12950#0" />
-                <element signature="e#13805#14898#0" />
-                <element signature="e#14955#15371#0" />
+                <element signature="e#13457#14550#0" />
+                <element signature="e#14607#15023#0" />
+                <element signature="e#15103#16456#0" />
+                <element signature="e#18276#18754#0" />
+                <element signature="e#18816#19535#0" />
+                <element signature="e#12252#12553#0" />
+                <element signature="e#12596#12897#0" />
+                <element signature="e#17692#18573#0" />
+                <element signature="e#18634#19543#0" />
+                <element signature="e#18461#18496#0" />
+                <element signature="e#14996#15221#0" />
+                <element signature="e#18575#19012#0" />
+                <element signature="e#19091#19540#0" />
+                <element signature="e#16312#19539#0" />
+                <element signature="e#17534#17544#0" />
               </folding>
             </state>
           </provider>
@@ -125,8 +303,8 @@
       <file leaf-file-name="_warps.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/transform/_warps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="709" lean-forward="true" selection-start-line="709" selection-end-line="711" selection-end-column="22" />
+            <state relative-caret-position="836">
+              <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -134,20 +312,11 @@
       <file leaf-file-name="pixeltest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pixeltest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1976">
-              <caret line="113" selection-start-line="113" selection-end-line="113" />
+            <state relative-caret-position="380">
+              <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4351">
-              <caret line="229" column="70" selection-start-line="11" selection-end-line="229" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -163,10 +332,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>next_im</find>
-      <find>nextImg</find>
-      <find>qimage</find>
-      <find>Button_open</find>
       <find>centralwidget</find>
       <find>qlistitem</find>
       <find>opendir</find>
@@ -180,7 +345,6 @@
       <find>256</find>
       <find>700</find>
       <find>scal</find>
-      <find>resize</find>
       <find>32</find>
       <find>350</find>
       <find>3</find>
@@ -192,7 +356,12 @@
       <find>display_qlabel</find>
       <find>ROI_height</find>
       <find>cubic</find>
+      <find>self.save_ct</find>
+      <find>655</find>
+      <find>resize</find>
       <find>order</find>
+      <find>output_folder</find>
+      <find>width</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -216,11 +385,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-69" />
-    <option name="y" value="48" />
-    <option name="width" value="975" />
-    <option name="height" value="990" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -381,19 +549,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23290938" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16773504" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32968238" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29032257" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28964758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32968238" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3673835" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37004405" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -435,19 +603,9 @@
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/1.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pixeltest.py</url>
           <line>13</line>
           <option name="timeStamp" value="170" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Pixel_gui.py</url>
-          <line>439</line>
-          <option name="timeStamp" value="182" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -457,7 +615,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="183" />
+      <option name="time" value="199" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -697,16 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pixeltest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1976">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
@@ -716,54 +864,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4351">
-          <caret line="229" column="70" selection-start-line="11" selection-end-line="229" selection-end-column="70" />
+        <state relative-caret-position="50">
+          <caret line="194" column="30" lean-forward="true" selection-start-line="194" selection-start-column="28" selection-end-line="194" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pixeltest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/skimage/transform/_warps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="709" lean-forward="true" selection-start-line="709" selection-end-line="711" selection-end-column="22" />
+        <state relative-caret-position="836">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pixel_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="50" column="65" lean-forward="true" selection-start-line="50" selection-start-column="65" selection-end-line="50" selection-end-column="65" />
+        <state relative-caret-position="95">
+          <caret line="32" column="30" lean-forward="true" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
             <element signature="e#301#527#0" />
             <element signature="e#2580#3936#0" />
-            <element signature="e#3975#4314#0" />
+            <element signature="e#4126#4372#0" />
+            <element signature="e#4414#4660#0" />
+            <element signature="e#4722#4777#0" />
+            <element signature="e#4822#5147#0" />
+            <element signature="e#5192#5517#0" />
+            <element signature="e#5554#5728#0" />
+            <element signature="e#5778#5856#0" />
+            <element signature="e#5888#5966#0" />
+            <element signature="e#5998#6076#0" />
+            <element signature="e#6109#6187#0" />
+            <element signature="e#6237#6292#0" />
+            <element signature="e#6324#6379#0" />
+            <element signature="e#6411#6466#0" />
+            <element signature="e#6499#6554#0" />
+            <element signature="e#4029#4368#0" />
+            <element signature="e#4422#4833#0" />
             <element signature="e#4353#4692#0" />
-            <element signature="e#4735#4981#0" />
-            <element signature="e#5024#5270#0" />
-            <element signature="e#5318#5373#0" />
-            <element signature="e#5419#5744#0" />
-            <element signature="e#5790#6115#0" />
-            <element signature="e#6153#6327#0" />
-            <element signature="e#6370#6671#0" />
-            <element signature="e#6714#7015#0" />
-            <element signature="e#7065#7143#0" />
-            <element signature="e#7175#7253#0" />
-            <element signature="e#7285#7363#0" />
-            <element signature="e#7396#7474#0" />
-            <element signature="e#7524#7579#0" />
-            <element signature="e#7611#7666#0" />
-            <element signature="e#7698#7753#0" />
-            <element signature="e#7786#7841#0" />
-            <element signature="e#7922#7957#0" />
-            <element signature="e#8036#8473#0" />
-            <element signature="e#8552#9001#0" />
-            <element signature="e#9049#9886#0" />
-            <element signature="e#9943#10168#0" />
-            <element signature="e#10229#11110#0" />
-            <element signature="e#11171#12080#0" />
-            <element signature="e#12150#12950#0" />
-            <element signature="e#13805#14898#0" />
-            <element signature="e#14955#15371#0" />
+            <element signature="e#13457#14550#0" />
+            <element signature="e#14607#15023#0" />
+            <element signature="e#15103#16456#0" />
+            <element signature="e#18276#18754#0" />
+            <element signature="e#18816#19535#0" />
+            <element signature="e#12252#12553#0" />
+            <element signature="e#12596#12897#0" />
+            <element signature="e#17692#18573#0" />
+            <element signature="e#18634#19543#0" />
+            <element signature="e#18461#18496#0" />
+            <element signature="e#14996#15221#0" />
+            <element signature="e#18575#19012#0" />
+            <element signature="e#19091#19540#0" />
+            <element signature="e#16312#19539#0" />
+            <element signature="e#17534#17544#0" />
           </folding>
         </state>
       </provider>
